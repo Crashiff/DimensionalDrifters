@@ -12,7 +12,7 @@ public class P1Movement : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float fallMultiplier = 3f;
-    public float xAxis = 1.4f, yAxis = 1.1f;
+    public float xAxis = 1.4f, yAxis = 1.1f; //sizes of the player
     Vector2 vevGravity;
 
     // Start is called before the first frame update
