@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class P2Movment : MonoBehaviour
 {
-
-    [SerializeField]
+    
+[SerializeField]
     Rigidbody2D rb;
 
     [SerializeField]
@@ -27,17 +27,29 @@ public class P2Movment : MonoBehaviour
     float xAxis = 1.4f, yAxis = 1.1f;
 
     private bool isGrounded = true;
+
+    [SerializeField]
+    float distToGround;
     private Vector2 vevGravity;
 
     // Start is called before the first frame update
     void Start()
     {
         vevGravity = new Vector2(0, -Physics2D.gravity.y);
+        distToGround = GetComponent<Collider2D>().bounds.extents.y;
     }
 
-    void FixedUpdate()
+     bool IsGrounded()
     {
-        isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(xAxis, yAxis), CapsuleDirection2D.Horizontal,0,groundLayer);
+        return Physics.CheckCapsule(GetComponent<Collider2D>().bounds.center, new Vector3(GetComponent<Collider2D>().bounds.center.x, GetComponent<Collider2D>().bounds.min.y - 0.1f, GetComponent<Collider2D>().bounds.center.z), 0.18f);
+    }
+
+
+void FixedUpdate()
+    {
+
+        //isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(xAxis, yAxis), CapsuleDirection2D.Horizontal,0,groundLayer);
+        isGrounded = IsGrounded();
 
         if (Input.GetKey(KeyCode.A))
         {
