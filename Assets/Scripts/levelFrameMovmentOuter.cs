@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class levelFrameMovmentOuter : MonoBehaviour
+public class LevelFrameMovmentOuter : MonoBehaviour
 {
 
-    public Transform transform;
-    public float zValue = 1;
+    [SerializeField]
+    Transform transformRot;
 
-    void Update()
+    [SerializeField]
+    float zValue = 1;
+
+    void FixedUpdate()
     {
 
         if (Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(0, 0, zValue);
+            transformRot.Rotate(0, 0, zValue);
         }
      
     }

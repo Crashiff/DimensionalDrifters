@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 156444836}
-  speed: 1.5
+  speed: 3
   jumpForce: 7
   groundLayer:
     serializedVersion: 2
@@ -860,7 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64eeaf24ba7e5134796ad121401cf3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 688773517}
+  transformRot: {fileID: 688773517}
   zValue: 1
 --- !u!1 &1008718920
 GameObject:
@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   current: 0
-  transform: {fileID: 1059945822}
+  transformRot: {fileID: 0}
 --- !u!1 &1151631478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772c1b1ed4ff566499bec24d0935c7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 1746478319}
+  transformRot: {fileID: 1746478319}
   zValue: 1
 --- !u!4 &1746478319
 Transform:

@@ -5,15 +5,29 @@ using UnityEngine;
 public class P2Movment : MonoBehaviour
 {
 
-    public Rigidbody2D rb;
-    public float speed = 1.5f;
-    public float jumpForce = 7f;
+    [SerializeField]
+    Rigidbody2D rb;
+
+    [SerializeField]
+    float speed = 1.5f;
+
+    [SerializeField]
+    float jumpForce = 7f;
+
+    [SerializeField]
+    LayerMask groundLayer;
+
+    [SerializeField]
+    Transform groundCheck;
+
+    [SerializeField]
+    float fallMultiplier = 3f;
+
+    [SerializeField]
+    float xAxis = 1.4f, yAxis = 1.1f;
+
     private bool isGrounded = true;
-    public LayerMask groundLayer;
-    public Transform groundCheck;
-    public float fallMultiplier = 3f;
-    public float xAxis = 1.4f, yAxis = 1.1f;
-    Vector2 vevGravity;
+    private Vector2 vevGravity;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +35,7 @@ public class P2Movment : MonoBehaviour
         vevGravity = new Vector2(0, -Physics2D.gravity.y);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(xAxis, yAxis), CapsuleDirection2D.Horizontal,0,groundLayer);
 

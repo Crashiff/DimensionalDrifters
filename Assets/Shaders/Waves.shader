@@ -17,7 +17,7 @@ Shader "Custom/Waves"
 
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
-        #pragma surface surf Standard fullforwardshadows
+        #pragma surface surf Standard fullforwardshadows vertex:vert
 
         // Use shader model 3.0 target, to get nicer looking lighting
         #pragma target 3.0
@@ -41,6 +41,14 @@ Shader "Custom/Waves"
         UNITY_INSTANCING_BUFFER_START(Props)
             // put more per-instance properties here
         UNITY_INSTANCING_BUFFER_END(Props)
+
+		void vert(inout appdata_full vertexData) {
+			float3 p = vertexData.vertex.xyz;
+
+			p.y = sin(p.x);
+
+			vertexData.vertex.xyz = p;
+		}
 
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
