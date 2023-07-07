@@ -21,7 +21,8 @@ Shader "Custom/SpencillFill"
 			Stencil
 			{
 				Ref 1
-				Comp notequal
+				Comp Less
+				Pass IncrSat
 			}
 
 			// render faces regardless if they point towards the camera or away from it
