@@ -4,7 +4,7 @@ Shader "Custom/SpencillClear"
 	{
 		Tags { "RenderType" = "Opaque" "Queue" = "Geometry+1" "ForceNoShadowCasting" = "True"}
 		ColorMask 0
-		//ZWrite off
+		ZWrite off
 		Stencil
 		{
 			Ref 1
@@ -38,8 +38,8 @@ Shader "Custom/SpencillClear"
 
 		Pass
 		{
-			Cull Front
-			Ztest Less
+			Cull Front //Remove Front
+			Ztest Greater //and keep pixels from the back that are in front of everything else (e.x sides of cube in front of plane)
 
 			CGPROGRAM
 			#pragma vertex vert
@@ -49,8 +49,8 @@ Shader "Custom/SpencillClear"
 
 		Pass
 		{
-			Cull Back
-			ZTest Greater
+			Cull Back //Remove back
+			ZTest Less //and keep pixels from the front that are behind something else ()
 
 			CGPROGRAM
 			#pragma vertex vert

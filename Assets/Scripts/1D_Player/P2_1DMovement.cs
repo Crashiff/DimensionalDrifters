@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P1NoJumpMovment : MonoBehaviour
+public class P2_1DMovement : MonoBehaviour
 {
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
@@ -13,14 +13,12 @@ public class P1NoJumpMovment : MonoBehaviour
         CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
         {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+            moveDirection = new Vector3(Input.GetAxis("P2_Horizontal"), 0, 0);
 
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
         }
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
-
     }
-
 }
