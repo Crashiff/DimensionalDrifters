@@ -39,7 +39,7 @@ Shader "Custom/SpencillClear"
 		Pass
 		{
 			Cull Front //Remove Front
-			Ztest Greater //and keep pixels from the back that are in front of everything else (e.x sides of cube in front of plane)
+			Ztest Less //and keep pixels from the back that are in front of everything else (e.x sides of cube in front of plane)
 
 			CGPROGRAM
 			#pragma vertex vert
@@ -50,7 +50,7 @@ Shader "Custom/SpencillClear"
 		Pass
 		{
 			Cull Back //Remove back
-			ZTest Less //and keep pixels from the front that are behind something else ()
+			ZTest Greater //and keep pixels from the front that are behind something else ()
 
 			CGPROGRAM
 			#pragma vertex vert
