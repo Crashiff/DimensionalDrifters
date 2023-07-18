@@ -368,7 +368,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   jumpSpeed: 8
-  gravity: 20
+  gravity: 0
+  fallMultiplierIncrement: 0.25
+  jumpMupltiplierDecrement: 0.25
 --- !u!1 &380510582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,11 +2112,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7918331411442379369, guid: 1b0c059e13288424cbac700fe9f0c234, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13
+      value: 13.85
       objectReference: {fileID: 0}
     - target: {fileID: 7918331411442379369, guid: 1b0c059e13288424cbac700fe9f0c234, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.05
+      value: 11.99
       objectReference: {fileID: 0}
     - target: {fileID: 7918331411442379369, guid: 1b0c059e13288424cbac700fe9f0c234, type: 3}
       propertyPath: m_LocalPosition.z
