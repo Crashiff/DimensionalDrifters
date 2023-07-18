@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteAlways]
 public class SetOuterColor : MonoBehaviour
 {
     public Color OuterColor;
@@ -9,6 +10,6 @@ public class SetOuterColor : MonoBehaviour
     void Update()
     {
         Renderer renderer = GetComponent<Renderer>();
-        renderer.material.SetColor("_CutoffColor", OuterColor);
+        renderer.material.SetColor("_Color", OuterColor);
     }
 }

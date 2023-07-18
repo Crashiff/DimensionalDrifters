@@ -23,6 +23,7 @@ public class P1Movement : MonoBehaviour
 
         if (controller.isGrounded)
         {
+            fallMultiplier = 0f;
             if (Input.GetButton("Jump"))
             {
                 fallMultiplier = 0.0f;
@@ -39,7 +40,7 @@ public class P1Movement : MonoBehaviour
         else
         {
             justJumped = false;
-            moveDirection.y -= gravity + fallMultiplier;
+            moveDirection.y = -(gravity + fallMultiplier);
             fallMultiplier += fallMultiplierIncrement;
         }
         

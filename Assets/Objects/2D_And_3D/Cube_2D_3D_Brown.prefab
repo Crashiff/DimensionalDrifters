@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 5166954122652248120}
   - component: {fileID: 44571057068864133}
   - component: {fileID: 1979923894531611171}
+  - component: {fileID: 6587825106034214426}
   m_Layer: 8
   m_Name: Element3D
   m_TagString: Untagged
@@ -365,3 +366,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6587825106034214426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499409753350770936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2192009ff7bcc5b42814d7727d50c60e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OuterColor: {r: 1, g: 1, b: 1, a: 0}
