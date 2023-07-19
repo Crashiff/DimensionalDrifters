@@ -9,7 +9,7 @@ public class SetOuterColor : MonoBehaviour
 
     void Update()
     {
-        Renderer renderer = GetComponent<Renderer>();
-        renderer.material.SetColor("_Color", OuterColor);
+        //Renderer renderer = GetComponent<Renderer>();
+        //renderer.material.SetColor("_Color", OuterColor);
     }
 }
