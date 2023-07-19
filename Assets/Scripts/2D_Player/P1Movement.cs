@@ -11,7 +11,7 @@ public class P1Movement : MonoBehaviour
     private float jumpMultiplier = 0.0f;
     public float jumpMupltiplierDecrement = 0.1f;
     private Vector3 moveDirection = Vector3.zero;
-    private bool justJumped = false;
+    public bool justJumped = false;
 
     void FixedUpdate()
     {
@@ -20,30 +20,43 @@ public class P1Movement : MonoBehaviour
 
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
+        Debug.Log("Is grounded: " + controller.isGrounded);
 
         if (controller.isGrounded)
         {
-            fallMultiplier = 0f;
+            Debug.Log("first if");
             if (Input.GetButton("Jump"))
             {
+                Debug.Log("inner if");
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
                 moveDirection.y = jumpSpeed;
                 justJumped = true;
             }
         }
+
         else if (justJumped && !controller.isGrounded)
         {
+            Debug.Log("first else-if");
             moveDirection.y += jumpSpeed - jumpMultiplier;
             jumpMultiplier += jumpMupltiplierDecrement;
         }
-        else
+        else if (justJumped && controller.isGrounded)
         {
+            Debug.Log("second else-if");
             justJumped = false;
+            fallMultiplier = 0f;
+            jumpMultiplier = 0.0f;
+        }
+        else if (!controller.isGrounded)
+        {
+            Debug.Log("last else-if");
             moveDirection.y = -(gravity + fallMultiplier);
             fallMultiplier += fallMultiplierIncrement;
         }
-        
+
+        Debug.Log("Movement is: " + moveDirection);
+        Debug.Log("Movement * time.deltatime is: " + moveDirection * Time.deltaTime);
         controller.Move(moveDirection * Time.deltaTime);
 
     }
