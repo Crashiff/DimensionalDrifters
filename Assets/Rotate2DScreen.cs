@@ -13,11 +13,11 @@ public class Rotate2DScreen : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            ScreenTransfrom.Rotate(0, 0, Speed);
+            ScreenTransfrom.Rotate(0, 0, Speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.Q))
         {
-            ScreenTransfrom.Rotate(0, 0, -Speed);
+            ScreenTransfrom.Rotate(0, 0, -Speed * Time.deltaTime);
         }
     }
 }
