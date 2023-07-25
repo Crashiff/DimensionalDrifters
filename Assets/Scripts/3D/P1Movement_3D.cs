@@ -15,7 +15,7 @@ public class P1Movement_3D : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)

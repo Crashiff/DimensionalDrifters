@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class P2Movment_3D : MonoBehaviour {
+public class P2Movement : MonoBehaviour {
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;

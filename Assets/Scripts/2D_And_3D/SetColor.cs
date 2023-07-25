@@ -6,7 +6,7 @@ public class SetColor : MonoBehaviour
 {
     public Color InsideColor;
 
-    void Update()
+    void Start()
     {
         Renderer renderer = GetComponent<Renderer>();
         renderer.material.SetColor("_CutoffColor", InsideColor);
