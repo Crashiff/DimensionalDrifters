@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteAlways]
-public class ChangeLayerOnCollisionWithRigidbody : MonoBehaviour
+public class ChangeLayerOnColiisionWithRigidbody : MonoBehaviour
 {
     //private GameObject buffer;
     private GameObject prepareChild;
