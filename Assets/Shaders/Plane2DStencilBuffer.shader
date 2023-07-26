@@ -26,7 +26,7 @@ Shader "Custom/Plane2DStencilBuffer"
 		//Ztest Greater
 
 		// render faces regardless if they point towards the camera or away from it
-		//Cull Off
+		Cull Off
 
 		CGPROGRAM
 		//the shader is a surface shader, meaning that it will be extended by unity in the background
