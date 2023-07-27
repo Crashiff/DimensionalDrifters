@@ -7,6 +7,7 @@ Shader "Custom/Plane2DStencilBuffer"
 		//_Smoothness("Smoothness", Range(0, 1)) = 0
 		//_Metallic("Metalness", Range(0, 1)) = 0
 		//[HDR]_Emission("Emission", color) = (0,0,0)
+		_Albedo("Albedo", Color) = (0,0,0,1)
 
 		//[HDR]_CutoffColor("Cutoff Color", Color) = (1,0,0,0)
 	}
@@ -45,6 +46,7 @@ Shader "Custom/Plane2DStencilBuffer"
 		//half3 _Emission;
 
 		//float4 _Plane;
+		fixed4 _Albedo;
 
 		//float4 _CutoffColor;
 
@@ -55,7 +57,8 @@ Shader "Custom/Plane2DStencilBuffer"
 
 	//the surface shader function which sets parameters the lighting function then uses
 	void surf(Input i, inout SurfaceOutputStandard o) {
-		o.Albedo = fixed4(1, 1, 1, 1);
+		o.Albedo = _Albedo;
+		//fixed4(0, 0, 0, 1);
 		////calculate signed distance to plane
 		//float distance = dot(i.worldPos, _Plane.xyz);
 		//distance = distance + _Plane.w;
