@@ -20,14 +20,11 @@ public class P1Movement : MonoBehaviour
 
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
-        Debug.Log("Is grounded: " + controller.isGrounded);
 
         if (controller.isGrounded)
         {
-            Debug.Log("first if");
             if (Input.GetButton("Jump"))
             {
-                Debug.Log("inner if");
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
                 moveDirection.y = jumpSpeed;
@@ -37,26 +34,21 @@ public class P1Movement : MonoBehaviour
 
         else if (justJumped && !controller.isGrounded)
         {
-            Debug.Log("first else-if");
             moveDirection.y += jumpSpeed - jumpMultiplier;
             jumpMultiplier += jumpMupltiplierDecrement;
         }
         else if (justJumped && controller.isGrounded)
         {
-            Debug.Log("second else-if");
             justJumped = false;
             fallMultiplier = 0f;
             jumpMultiplier = 0.0f;
         }
         else if (!controller.isGrounded)
         {
-            Debug.Log("last else-if");
             moveDirection.y = -(gravity + fallMultiplier);
             fallMultiplier += fallMultiplierIncrement;
         }
 
-        Debug.Log("Movement is: " + moveDirection);
-        Debug.Log("Movement * time.deltatime is: " + moveDirection * Time.deltaTime);
         controller.Move(moveDirection * Time.deltaTime);
 
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028499, g: 0.2257165, b: 0.306924, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028468, g: 0.2257164, b: 0.30692482, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushPower: 2
---- !u!114 &601505173
+--- !u!114 &601505179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -483,12 +483,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 474402982}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1999839e134b23549b046e058d904813, type: 3}
+  m_Script: {fileID: 11500000, guid: 855cfd10e6963bb40a0e7a8b9c03af3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  gravity: 20
 --- !u!1 &1043639269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2429803494929714863, guid: 304a8a513ef5fbe44bfaf9fab306d083, type: 3}
@@ -1262,9 +1259,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2958616505048934018, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: jumpSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2958616505048934019, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038017500149160107, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.0608
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038017500149160107, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038017500149160107, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
@@ -1299,7 +1312,11 @@ MonoBehaviour:
   player2: {fileID: 2958616504308572880}
   player1Camera: {fileID: 137083329}
   player2Camera: {fileID: 2958616504308572881}
---- !u!114 &2958616504308572891
+  p1OuterColor: {fileID: 2100000, guid: dae2da45de44a614f9c84dc95e8ca477, type: 2}
+  p2OuterColor: {fileID: 2100000, guid: 774f41e77f79fba4db1090bd584735f9, type: 2}
+  p1InnerColor: {fileID: 2100000, guid: e5bb74ba0fe4e2d43ad5f0e5cc4a3605, type: 2}
+  p2InnerColor: {fileID: 2100000, guid: 92d1e47775008264a90ba796abe22d4c, type: 2}
+--- !u!114 &2958616504308572899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1308,11 +1325,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2958616504308572880}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a4ffa5a695f0344a27db6cf48e729c, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2890e82794e824da08d9f4782c70f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 2
-  jumpHeight: 1
+  speed: 6
+  jumpSpeed: 4
+  gravity: 20
+  fallMultiplierIncrement: 0.1
+  jumpMupltiplierDecrement: 0.1
+  justJumped: 0
 --- !u!1001 &7528113248451463836
 PrefabInstance:
   m_ObjectHideFlags: 0
