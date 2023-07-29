@@ -56,7 +56,7 @@ public class Change2DPlayerOnCollision : MonoBehaviour
     {
         player1Turn = option == 1 ? false : true;
         switchPositions(option);
-        //switchColors(option);
+        switchColors(option);
         switchMovement(option);
         //switchCameras();
         switchTags(option);
@@ -154,18 +154,18 @@ public class Change2DPlayerOnCollision : MonoBehaviour
         {
             case 1:
                 {
-                    player1Color2D.GetComponent<Renderer>().material = p2InnerColor;
-                    player2Color2D.GetComponent<Renderer>().material = p1InnerColor;
-                    player1Element3D.GetComponent<Renderer>().material = p2OuterColor;
-                    player2Element3D.GetComponent<Renderer>().material = p1OuterColor;
+                    player1Color2D.GetComponent<MeshRenderer>().material = p2InnerColor;
+                    player2Color2D.GetComponent<MeshRenderer>().material = p1InnerColor;
+                    player1Element3D.GetComponent<MeshRenderer>().material = p2OuterColor;
+                    player2Element3D.GetComponent<MeshRenderer>().material = p1OuterColor;
                     break;
                 }
             case 2:
                 {
-                    player1Color2D.GetComponent<Renderer>().material = p1InnerColor;
-                    player2Color2D.GetComponent<Renderer>().material = p2InnerColor;
-                    player1Element3D.GetComponent<Renderer>().material = p1OuterColor;
-                    player2Element3D.GetComponent<Renderer>().material = p2OuterColor;
+                    player1Color2D.GetComponent<MeshRenderer>().material = p1InnerColor;
+                    player2Color2D.GetComponent<MeshRenderer>().material = p2InnerColor;
+                    player1Element3D.GetComponent<MeshRenderer>().material = p1OuterColor;
+                    player2Element3D.GetComponent<MeshRenderer>().material = p2OuterColor;
                     break;
                 }
         }

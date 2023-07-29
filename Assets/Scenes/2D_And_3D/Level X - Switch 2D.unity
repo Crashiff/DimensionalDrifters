@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028468, g: 0.2257164, b: 0.30692482, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028499, g: 0.2257165, b: 0.306924, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -291,6 +291,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2429803494723302395, guid: b18e4eb140c18bc44a815e8eab97bd29, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8abbfd94c2a24c442b239fb9ddd71c75, type: 2}
     - target: {fileID: 2429803494723302398, guid: b18e4eb140c18bc44a815e8eab97bd29, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -354,6 +358,10 @@ PrefabInstance:
     - target: {fileID: 2429803494929714863, guid: b18e4eb140c18bc44a815e8eab97bd29, type: 3}
       propertyPath: m_Name
       value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667475229633473889, guid: b18e4eb140c18bc44a815e8eab97bd29, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5667475229633473889, guid: b18e4eb140c18bc44a815e8eab97bd29, type: 3}
       propertyPath: InsideColor.b
@@ -1215,6 +1223,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 166714347794140044, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 166714347794140046, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1341,6 +1353,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7528113249971394560, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7528113249971394562, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: m_RootOrder
       value: 5
