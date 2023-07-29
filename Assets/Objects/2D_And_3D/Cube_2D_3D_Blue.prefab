@@ -122,7 +122,6 @@ GameObject:
   - component: {fileID: 2429803494723302394}
   - component: {fileID: 2429803494723302395}
   - component: {fileID: 5696565413277731824}
-  - component: {fileID: 5667475229633473889}
   - component: {fileID: 2270507704059500859}
   m_Layer: 0
   m_Name: Color2D
@@ -174,7 +173,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31355f99323eaf94aa267595839a757e, type: 2}
+  - {fileID: 2100000, guid: 92d1e47775008264a90ba796abe22d4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -208,19 +207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97029225f3e3341419b7ae9ef21acd10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5667475229633473889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2429803494723302398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03c2fc45c1edc9e45b84b647aa968ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InsideColor: {r: 0.13568883, g: 0.4875287, b: 0.9339623, a: 0.38431373}
 --- !u!65 &2270507704059500859
 BoxCollider:
   m_ObjectHideFlags: 0
