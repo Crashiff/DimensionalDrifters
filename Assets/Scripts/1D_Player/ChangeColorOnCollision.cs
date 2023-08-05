@@ -8,6 +8,8 @@ public class ChangeColorOnCollision : MonoBehaviour
     private GameObject player2;
     public float xDest = 19.9f;
     private bool didChange = false;
+    [SerializeField]
+    private Color original;
 
     void Start()
     {
@@ -30,6 +32,17 @@ public class ChangeColorOnCollision : MonoBehaviour
             Debug.Log("Player2 coll");
             cubeRenderer.material.SetColor("_Color", player2.GetComponent<Renderer>().material.GetColor("_Color"));
             didChange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        var cubeRenderer = GetComponent<Renderer>();
+
+        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
+        {
+            cubeRenderer.material.SetColor("_Color", original);
+            didChange = false;
         }
     }
 }

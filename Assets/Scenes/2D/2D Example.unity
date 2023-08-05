@@ -1338,9 +1338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   jumpSpeed: 8
-  gravity: 20
-  fallMultiplierIncrement: 0.1
-  jumpMupltiplierDecrement: 0.1
+  gravity: 0
+  fallMultiplierIncrement: 0.25
+  jumpMupltiplierDecrement: 0.25
   justJumped: 0
 --- !u!1 &1684330074
 GameObject:
