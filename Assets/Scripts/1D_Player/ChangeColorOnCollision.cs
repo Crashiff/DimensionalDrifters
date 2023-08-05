@@ -9,28 +9,35 @@ public class ChangeColorOnCollision : MonoBehaviour
     public float xDest = 19.9f;
     private bool didChange = false;
     [SerializeField]
-    private Color original;
+    private Material original;
+    [SerializeField]
+    private Material player1Color;
+    [SerializeField]
+    private Material player2Color;
 
     void Start()
     {
-        player1 = GameObject.FindGameObjectWithTag("Player1");
-        player2 = GameObject.FindGameObjectWithTag("Player2");
+       // player1 = GameObject.FindGameObjectWithTag("Player1");
+       // player2 = GameObject.FindGameObjectWithTag("Player2");
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        var cubeRenderer = GetComponent<Renderer>();
+        //var cubeRenderer = GetComponent<Renderer>();
 
         if (collision.gameObject.tag == "Player1" && !didChange)
         {
             Debug.Log("Player1 coll");
-            cubeRenderer.material.SetColor("_Color", player1.GetComponent<Renderer>().material.GetColor("_Color"));
+            //cubeRenderer.material.SetColor("_Color", player1.GetComponent<Renderer>().material.GetColor("_Color"));
+            this.GetComponent<MeshRenderer>().material = player1Color;
+
             didChange = true;
         }
         else if (collision.gameObject.tag == "Player2" && !didChange)
         {
             Debug.Log("Player2 coll");
-            cubeRenderer.material.SetColor("_Color", player2.GetComponent<Renderer>().material.GetColor("_Color"));
+            // cubeRenderer.material.SetColor("_Color", player2.GetComponent<Renderer>().material.GetColor("_Color"));
+            this.GetComponent<MeshRenderer>().material = player2Color;
             didChange = true;
         }
     }
@@ -41,7 +48,8 @@ public class ChangeColorOnCollision : MonoBehaviour
 
         if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
         {
-            cubeRenderer.material.SetColor("_Color", original);
+            this.GetComponent<MeshRenderer>().material = original;
+            //cubeRenderer.material.SetColor("_Color", original);
             didChange = false;
         }
     }
