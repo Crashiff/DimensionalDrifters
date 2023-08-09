@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 635f51e4a41ba9f45be9205ebf8f27af, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -815,6 +815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: endLevelTarget (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7084293293251165799, guid: 1dd0a05bd97deb54ebd2e71092c93863, type: 3}
+      propertyPath: nextSceneName
+      value: Level 1 - Push box 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd0a05bd97deb54ebd2e71092c93863, type: 3}
 --- !u!1 &1170292913
@@ -1334,9 +1338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   jumpSpeed: 8
-  gravity: 20
-  fallMultiplierIncrement: 0.1
-  jumpMupltiplierDecrement: 0.1
+  gravity: 0
+  fallMultiplierIncrement: 0.25
+  jumpMupltiplierDecrement: 0.25
   justJumped: 0
 --- !u!1 &1684330074
 GameObject:

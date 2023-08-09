@@ -131,20 +131,6 @@ public class Change2DPlayerOnCollision : MonoBehaviour
     void switchColors(int option)
     {
         Debug.Log("Colors swithed");
-        //GameObject player1Color2D = player1.transform.Find("Cube_2D_3D_Orange").gameObject.transform.Find("Color2D").gameObject;
-        //GameObject player1Element3D = player1.transform.Find("Cube_2D_3D_Orange").transform.Find("Element3D").gameObject;
-        //GameObject player2Color2D = player2.transform.Find("Cube_2D_3D_Blue").transform.Find("Color2D").gameObject;
-        //GameObject player2Element3D = player2.transform.Find("Cube_2D_3D_Blue").transform.Find("Element3D").gameObject;
-
-        //Material tempPlayer1Color2D = player1Color2D.GetComponent<Renderer>().material;
-        //Material tempPlayer1Element3D = player1Element3D.GetComponent<Renderer>().material;
-
-        //player1Color2D.GetComponent<Renderer>().material = player2Color2D.GetComponent<Renderer>().material;
-        //player1Element3D.GetComponent<Renderer>().material = player2Element3D.GetComponent<Renderer>().material;
-
-        //player2Color2D.GetComponent<Renderer>().material = tempPlayer1Color2D;
-        //player2Element3D.GetComponent<Renderer>().material = tempPlayer1Element3D;
-
         GameObject player1Color2D = player1.transform.Find("Cube_2D_3D_Orange").gameObject.transform.Find("Color2D").gameObject;
         GameObject player1Element3D = player1.transform.Find("Cube_2D_3D_Orange").transform.Find("Element3D").gameObject;
         GameObject player2Color2D = player2.transform.Find("Cube_2D_3D_Blue").transform.Find("Color2D").gameObject;

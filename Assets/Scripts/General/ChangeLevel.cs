@@ -31,6 +31,7 @@ public class ChangeLevel : MonoBehaviour
         if (collider.gameObject.tag == "Player1" && player1Counter == 1)
         {
             player1Counter--;
+
             Debug.Log("P1 exited");
         }
         if (collider.gameObject.tag == "Player2" && player2Counter == 1)
