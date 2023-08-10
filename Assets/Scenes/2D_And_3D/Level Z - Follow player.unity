@@ -712,11 +712,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474402982}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 855cfd10e6963bb40a0e7a8b9c03af3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &601505180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474402982}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec5e10b57d36cb6489647b34646d6501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 2
+  jumpHeight: 1
 --- !u!1001 &744118870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1715,6 +1729,10 @@ PrefabInstance:
     - target: {fileID: 7528113249971394564, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: m_TagString
       value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528113249971394565, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7528113249971394565, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: jumpHeight
