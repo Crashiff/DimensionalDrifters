@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 120c6e163f4c97341a8c2c0a03df8570, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -595,7 +595,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xDest: 19.9
-  original: {r: 0, g: 0, b: 0, a: 0}
+  original: {fileID: 0}
+  player1Color: {fileID: 0}
+  player2Color: {fileID: 0}
 --- !u!65 &1009024540
 BoxCollider:
   m_ObjectHideFlags: 0
