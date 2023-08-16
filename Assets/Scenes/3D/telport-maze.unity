@@ -1847,6 +1847,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5184506418778583299, guid: 6a6927853b77c3f4db5d87ea16e2720f, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2902
+      objectReference: {fileID: 0}
     - target: {fileID: 5184506419120625764, guid: 6a6927853b77c3f4db5d87ea16e2720f, type: 3}
       propertyPath: m_Name
       value: Player_2
@@ -5277,6 +5281,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5184506418778583299, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 6998
+      objectReference: {fileID: 0}
     - target: {fileID: 5184506419120625764, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: m_Name
       value: Player_1
