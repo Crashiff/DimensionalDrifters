@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class P2Movement : MonoBehaviour {
- 
+
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
@@ -10,8 +10,9 @@ public class P2Movement : MonoBehaviour {
     private float fallMultiplier = 0.0f;
     private float jumpMultiplier = 0.0f;
     public float jumpMupltiplierDecrement = 0.1f;
-    private Vector3 moveDirection = Vector3.zero;
+    public Vector3 moveDirection = Vector3.zero;
     public bool justJumped = false;
+    public bool wasGrounded = true;
 
     void FixedUpdate()
     {
@@ -20,33 +21,57 @@ public class P2Movement : MonoBehaviour {
 
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
-
+        //Debug.Log("Fall multiplier: " + fallMultiplier);
+        //Debug.Log("Jump multiplier: " + jumpMultiplier);
         if (controller.isGrounded)
         {
-            Debug.Log("first if");
+            wasGrounded = true;
+            justJumped = false;
+            Debug.Log("if (controller.isGrounded)");
             if (Input.GetButton("P2_Jump"))
             {
-                Debug.Log("inner if");
+                Debug.Log("if (controller.isGrounded) if (Input.GetButton(\"P2_Jump\"))");
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
                 moveDirection.y = jumpSpeed;
                 justJumped = true;
+
+            }
+            if (wasGrounded == true)
+            {
+                Debug.Log("if (controller.isGrounded) if (wasGrounded == true)");
+                wasGrounded = false;
+                fallMultiplier = 0.0f;
+                jumpMultiplier = 0.0f;
+                moveDirection.y = 0.0f;
             }
         }
 
         else if (justJumped && !controller.isGrounded)
         {
+            Debug.Log("else if (justJumped && !controller.isGrounded) if (wasGrounded == true)");
+            if (wasGrounded == true)
+            {
+                Debug.Log("if (controller.isGrounded) if (wasGrounded == true)");
+                wasGrounded = false;
+                fallMultiplier = 0.0f;
+                jumpMultiplier = 0.0f;
+                moveDirection.y = 0.0f;
+            }
             moveDirection.y += jumpSpeed - jumpMultiplier;
             jumpMultiplier += jumpMupltiplierDecrement;
         }
         else if (justJumped && controller.isGrounded)
         {
+            Debug.Log("else if (justJumped && controller.isGrounded)");
             justJumped = false;
-            fallMultiplier = 0f;
+            fallMultiplier = 0.0f;
             jumpMultiplier = 0.0f;
         }
         else if (!controller.isGrounded)
         {
+            Debug.Log("else if (!controller.isGrounded)");
+            justJumped = false;
             moveDirection.y = -(gravity + fallMultiplier);
             fallMultiplier += fallMultiplierIncrement;
         }

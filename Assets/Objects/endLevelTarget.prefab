@@ -113,6 +113,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xDest: 19.9
+  original: {fileID: 2100000, guid: 074977f062869cc42ac6b78dfa47b05e, type: 2}
+  player1Color: {fileID: 2100000, guid: dae2da45de44a614f9c84dc95e8ca477, type: 2}
+  player2Color: {fileID: 2100000, guid: 774f41e77f79fba4db1090bd584735f9, type: 2}
 --- !u!54 &6709099639859692778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -141,3 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d9070e6e948cb4ca9384d52d78a77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSceneName: 
