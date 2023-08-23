@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/1D/firstLevel.unity
     guid: b131636b5db83da4282030c5b980f389
   - enabled: 1
+    path: Assets/Scenes/1D/secondlevel.unity
+    guid: d700998bd296ee9489fb7400bc6c0a58
+  - enabled: 1
+    path: Assets/Scenes/1D_And_2D/starting2D.unity
+    guid: 5fa19804eaa3ff2449d394c9c942cc8a
+  - enabled: 1
     path: Assets/Scenes/2D/2D-platforn-level.unity
     guid: 5c92bd0d10a4c21459a5926abfbcbc61
   - enabled: 1
@@ -20,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2D_And_3D/Level X - Switch 2D.unity
     guid: edc030e3e1ca65140a2998fbf963d836
+  - enabled: 1
+    path: Assets/Scenes/2D_And_3D/Level Y - Moving 2D 1.unity
+    guid: 7ffa0085a20717248ae3e164e2682647
+  - enabled: 1
+    path: Assets/Scenes/2D_And_3D/Level Z - Follow player.unity
+    guid: e46d25b196944c948936aee6554c4377
+  - enabled: 1
+    path: Assets/Scenes/3D/telport-maze.unity
+    guid: 7c4cd6d4a2e1fbf418d10cb043a272ea
   m_configObjects: {}

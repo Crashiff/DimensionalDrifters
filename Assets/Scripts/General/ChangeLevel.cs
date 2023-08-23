@@ -22,6 +22,8 @@ public class ChangeLevel : MonoBehaviour
         }
         if (player1Counter == 1 && player2Counter == 1)
         {
+            player1Counter = 0;
+            player2Counter = 0;
             SceneManager.LoadScene(sceneName: nextSceneName);
         }
     }

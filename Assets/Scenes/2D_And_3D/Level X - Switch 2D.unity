@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c0158519a50a53643b50e0b41d157e3c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -913,6 +913,24 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 774f41e77f79fba4db1090bd584735f9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
+--- !u!1 &1575912263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7868163550162116300, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
+  m_PrefabInstance: {fileID: 1575912262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1575912264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575912263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d9070e6e948cb4ca9384d52d78a77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Level Y - Moving 2D 1
 --- !u!1 &1911500507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1098,24 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 774f41e77f79fba4db1090bd584735f9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
+--- !u!1 &2041579095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7868163550162116300, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
+  m_PrefabInstance: {fileID: 2041579094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2041579096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041579095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d9070e6e948cb4ca9384d52d78a77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Level Y - Moving 2D 1
 --- !u!21 &2086062269
 Material:
   serializedVersion: 8
