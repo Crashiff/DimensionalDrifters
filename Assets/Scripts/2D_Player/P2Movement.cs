@@ -27,10 +27,10 @@ public class P2Movement : MonoBehaviour {
         {
             wasGrounded = true;
             justJumped = false;
-            Debug.Log("if (controller.isGrounded)");
+            //Debug.Log("if (controller.isGrounded)");
             if (Input.GetButton("P2_Jump"))
             {
-                Debug.Log("if (controller.isGrounded) if (Input.GetButton(\"P2_Jump\"))");
+                //Debug.Log("if (controller.isGrounded) if (Input.GetButton(\"P2_Jump\"))");
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
                 moveDirection.y = jumpSpeed;
@@ -39,7 +39,7 @@ public class P2Movement : MonoBehaviour {
             }
             if (wasGrounded == true)
             {
-                Debug.Log("if (controller.isGrounded) if (wasGrounded == true)");
+                //Debug.Log("if (controller.isGrounded) if (wasGrounded == true)");
                 wasGrounded = false;
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
@@ -49,10 +49,10 @@ public class P2Movement : MonoBehaviour {
 
         else if (justJumped && !controller.isGrounded)
         {
-            Debug.Log("else if (justJumped && !controller.isGrounded) if (wasGrounded == true)");
+            //Debug.Log("else if (justJumped && !controller.isGrounded) if (wasGrounded == true)");
             if (wasGrounded == true)
             {
-                Debug.Log("if (controller.isGrounded) if (wasGrounded == true)");
+                //Debug.Log("if (controller.isGrounded) if (wasGrounded == true)");
                 wasGrounded = false;
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
@@ -63,14 +63,14 @@ public class P2Movement : MonoBehaviour {
         }
         else if (justJumped && controller.isGrounded)
         {
-            Debug.Log("else if (justJumped && controller.isGrounded)");
+            //Debug.Log("else if (justJumped && controller.isGrounded)");
             justJumped = false;
             fallMultiplier = 0.0f;
             jumpMultiplier = 0.0f;
         }
         else if (!controller.isGrounded)
         {
-            Debug.Log("else if (!controller.isGrounded)");
+            //Debug.Log("else if (!controller.isGrounded)");
             justJumped = false;
             moveDirection.y = -(gravity + fallMultiplier);
             fallMultiplier += fallMultiplierIncrement;
@@ -78,5 +78,11 @@ public class P2Movement : MonoBehaviour {
 
         controller.Move(moveDirection * Time.deltaTime);
 
+    }
+
+    void OnCollisionEnter(Collision collision) 
+    {
+        jumpMultiplier = System.Math.Max(jumpSpeed, jumpMultiplier);
+        Debug.Log("hello");
     }
 }
