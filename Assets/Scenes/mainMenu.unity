@@ -721,7 +721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 288, y: -217}
+  m_AnchoredPosition: {x: 609.5, y: -217}
   m_SizeDelta: {x: -1739, y: -715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &348508515
@@ -1208,6 +1208,7 @@ GameObject:
   - component: {fileID: 1372926940}
   - component: {fileID: 1372926939}
   - component: {fileID: 1372926943}
+  - component: {fileID: 1372926944}
   m_Layer: 5
   m_Name: mainMenu
   m_TagString: Untagged
@@ -1314,6 +1315,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0543f6d8179e72641bb1e56173e47584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1372926944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372926938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d60093b7659dd4793383216ce776c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubePrefab: {fileID: 348508513}
+  spawnInterval: 5
+  rotationDuration: 3
 --- !u!1 &1797875052
 GameObject:
   m_ObjectHideFlags: 0
