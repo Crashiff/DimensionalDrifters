@@ -32,9 +32,9 @@ public class P1Movement_3DVer2 : MonoBehaviour
         controller.transform.Rotate(Vector3.up * inputX * (50f * Time.deltaTime));
         controller.Move(movement * playerSpeed * Time.deltaTime);
 
-        // Changes the height position of the player..
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
+        if (Input.GetButton("Jump") && groundedPlayer)
         {
+            Debug.Log("Jumped");
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
 

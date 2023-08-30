@@ -24,7 +24,7 @@ public class P2Movment : MonoBehaviour
     float fallMultiplier = 3f;
 
     [SerializeField]
-    float xAxis = 1.4f, yAxis = 1.1f;
+    //float xAxis = 1.4f, yAxis = 1.1f;
 
     private bool isGrounded = true;
 
