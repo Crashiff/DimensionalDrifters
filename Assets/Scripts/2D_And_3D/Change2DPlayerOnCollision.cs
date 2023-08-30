@@ -58,7 +58,7 @@ public class Change2DPlayerOnCollision : MonoBehaviour
         switchPositions(option);
         switchColors(option);
         switchMovement(option);
-        //switchCameras();
+        switchCameras();
         switchTags(option);
     }
 
