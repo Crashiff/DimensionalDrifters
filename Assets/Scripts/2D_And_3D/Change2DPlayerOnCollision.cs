@@ -68,17 +68,17 @@ public class Change2DPlayerOnCollision : MonoBehaviour
         {
             case 1:
                 {
-                    player1.GetComponent<P1Movement_3D>().enabled = false;
-                    player1.GetComponent<P2Movement_3D>().enabled = true;
+                    player1.GetComponent<P1Movement_3DVer2>().enabled = false;
+                    player1.GetComponent<P2Movement_3DVer2>().enabled = true;
                     player2.GetComponent<P2Movement>().enabled = false;
-                    player2.GetComponent<P1Movement>().enabled = true;
+                    player2.GetComponent<P1Movement_2DVer2>().enabled = true;
                     break;
                 }
             case 2:
                 {
-                    player1.GetComponent<P2Movement_3D>().enabled = false;
-                    player1.GetComponent<P1Movement_3D>().enabled = true;
-                    player2.GetComponent<P1Movement>().enabled = false;
+                    player1.GetComponent<P2Movement_3DVer2>().enabled = false;
+                    player1.GetComponent<P1Movement_3DVer2>().enabled = true;
+                    player2.GetComponent<P1Movement_2DVer2>().enabled = false;
                     player2.GetComponent<P2Movement>().enabled = true;
                     break;
                 }
