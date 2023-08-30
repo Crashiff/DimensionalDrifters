@@ -8,6 +8,7 @@ public class ChangeLevel : MonoBehaviour
 
     static int player1Counter = 0;
     static int player2Counter = 0;
+    public float delayTime = 2f;
     public string nextSceneName;
 
     private void OnTriggerEnter(Collider collider)
@@ -24,8 +25,13 @@ public class ChangeLevel : MonoBehaviour
         {
             player1Counter = 0;
             player2Counter = 0;
-            SceneManager.LoadScene(sceneName: nextSceneName);
+            Invoke("LoadLevel", delayTime);
         }
+    }
+
+    void LoadLevel()
+    {
+        SceneManager.LoadScene(sceneName: nextSceneName);
     }
 
     private void OnTriggerExit(Collider collider)
