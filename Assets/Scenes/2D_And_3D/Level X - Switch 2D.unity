@@ -810,6 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d9070e6e948cb4ca9384d52d78a77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 2
   nextSceneName: Level Y - Moving 2D 1
 --- !u!1 &1911500507
 GameObject:
@@ -905,6 +906,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -113.963, z: 0}
+--- !u!20 &1983538371 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5184506418778583299, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+  m_PrefabInstance: {fileID: 7528113248451463836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2041579094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -995,6 +1001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d9070e6e948cb4ca9384d52d78a77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 2
   nextSceneName: Level Y - Moving 2D 1
 --- !u!21 &2086062269
 Material:
@@ -1204,7 +1211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 985047957}
   player2: {fileID: 2958616504308572880}
-  player1Camera: {fileID: 137083329}
+  player1Camera: {fileID: 1983538371}
   player2Camera: {fileID: 2958616504308572881}
   p1OuterColor: {fileID: 2100000, guid: dae2da45de44a614f9c84dc95e8ca477, type: 2}
   p2OuterColor: {fileID: 2100000, guid: 774f41e77f79fba4db1090bd584735f9, type: 2}
