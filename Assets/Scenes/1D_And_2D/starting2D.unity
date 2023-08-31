@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 975865269}
   - component: {fileID: 975865271}
   - component: {fileID: 975865270}
+  - component: {fileID: 975865272}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -633,8 +634,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -651,13 +652,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 176.4
+  m_fontSizeBase: 176.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -701,6 +702,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975865268}
   m_CullTransparentMesh: 1
+--- !u!114 &975865272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975865268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 4, y: -4}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1009024537
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,6 +861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d9070e6e948cb4ca9384d52d78a77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 2
   nextSceneName: 2D-platforn-level
 --- !u!1 &1113983786 stripped
 GameObject:
@@ -863,6 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d9070e6e948cb4ca9384d52d78a77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 2
   nextSceneName: 2D-platforn-level
 --- !u!1 &1170292913
 GameObject:
@@ -1570,7 +1588,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
