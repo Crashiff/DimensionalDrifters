@@ -32,7 +32,6 @@ public class P2Movement_3DVer2 : MonoBehaviour
         controller.transform.Rotate(Vector3.up * inputX * (50f * Time.deltaTime));
         controller.Move(movement * playerSpeed * Time.deltaTime);
 
-        // Init jump, changed to GetButton from GetButtonDown fixed the problem of not registering
         if (Input.GetButton("P2_Jump") && groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);

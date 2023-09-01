@@ -5,7 +5,6 @@ using UnityEngine;
 [ExecuteAlways]
 public class ChangeLayerOnColiisionWithRigidbody : MonoBehaviour
 {
-    //private GameObject buffer;
     private GameObject prepareChild;
     private GameObject colorChild;
 

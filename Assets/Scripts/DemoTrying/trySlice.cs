@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class trySlice : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         // Get the Mesh component from the object
@@ -20,7 +19,6 @@ public class trySlice : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         

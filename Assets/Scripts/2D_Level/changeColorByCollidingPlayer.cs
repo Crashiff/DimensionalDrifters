@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class changeColorByCollidingPlayer : MonoBehaviour
 {
-    private GameObject player1;
-    private GameObject player2;
     public float xDest = 19.9f;
     private bool didChange = false;
     [SerializeField]

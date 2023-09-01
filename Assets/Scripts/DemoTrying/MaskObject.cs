@@ -5,7 +5,6 @@ using UnityEngine;
 public class MaskObject : MonoBehaviour
 {
     public GameObject[] maskObj;
-    // Start is called before the first frame update
     void Start()
     {
         for(int i = 0; i < maskObj.Length; i++)
@@ -14,7 +13,6 @@ public class MaskObject : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         

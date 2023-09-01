@@ -31,7 +31,7 @@ public class P2Movement_3D : MonoBehaviour
             gameObject.transform.forward = move;
         }
 
-        // Changes the height position of the player..
+        // Changes the height position of the player
         if (Input.GetButtonDown("P2_Jump") && groundedPlayer)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
