@@ -27,6 +27,7 @@ public class P2Movement : MonoBehaviour {
             justJumped = false;
             if (Input.GetButton("P2_Jump"))
             {
+                gameObject.GetComponent<AudioSource>().Play();
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
                 moveDirection.y = jumpSpeed;

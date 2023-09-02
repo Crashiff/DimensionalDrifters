@@ -34,6 +34,7 @@ public class P1Movement_3DVer2 : MonoBehaviour
 
         if (Input.GetButton("Jump") && groundedPlayer)
         {
+            gameObject.GetComponent<AudioSource>().Play();
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
 
