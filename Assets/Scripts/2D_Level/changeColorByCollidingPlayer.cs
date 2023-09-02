@@ -12,19 +12,22 @@ public class changeColorByCollidingPlayer : MonoBehaviour
     private Material player1Color;
     [SerializeField]
     private Material player2Color;
+    [SerializeField]
+    private GameObject platformToChange;
 
     private void OnTriggerEnter(Collider collision)
     {
 
         if (collision.gameObject.tag == "Player1" && !didChange)
         {
-            this.GetComponent<MeshRenderer>().material = player1Color;
+            platformToChange.GetComponent<MeshRenderer>().material = player1Color;
 
             didChange = true;
         }
         else if (collision.gameObject.tag == "Player2" && !didChange)
         {
-            this.GetComponent<MeshRenderer>().material = player2Color;
+
+            platformToChange.GetComponent<MeshRenderer>().material = player2Color;
             didChange = true;
         }
     }
