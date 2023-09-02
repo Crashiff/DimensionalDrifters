@@ -1616,7 +1616,7 @@ GameObject:
   - component: {fileID: 940628997}
   m_Layer: 0
   m_Name: Platform3
-  m_TagString: Untagged
+  m_TagString: platform3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1875,6 +1875,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd0a05bd97deb54ebd2e71092c93863, type: 3}
+--- !u!1 &1120255797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6709099639859692784, guid: 1dd0a05bd97deb54ebd2e71092c93863, type: 3}
+  m_PrefabInstance: {fileID: 6709099638549547423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1120255805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120255797}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9ccee4dd0b78c46b34fb573b1bf34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platform1: {fileID: 1990513678}
+  platform2: {fileID: 1684330074}
+  platform3: {fileID: 940628996}
+  platform4: {fileID: 2069946350}
+  platform5: {fileID: 1498774948}
+  player1Color: {fileID: 2100000, guid: dae2da45de44a614f9c84dc95e8ca477, type: 2}
+  player2Color: {fileID: 2100000, guid: 774f41e77f79fba4db1090bd584735f9, type: 2}
+  original: {fileID: 2100000, guid: e1421d9bbf5335a4e81905666da7928a, type: 2}
 --- !u!1 &1170292913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,7 +2493,7 @@ GameObject:
   - component: {fileID: 1498774949}
   m_Layer: 0
   m_Name: platform5
-  m_TagString: Untagged
+  m_TagString: platform5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2565,7 +2590,7 @@ GameObject:
   - component: {fileID: 1684330075}
   m_Layer: 0
   m_Name: Platform2
-  m_TagString: Untagged
+  m_TagString: platform2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2940,7 +2965,7 @@ GameObject:
   - component: {fileID: 1990513684}
   m_Layer: 0
   m_Name: platform1
-  m_TagString: Untagged
+  m_TagString: platform1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3037,7 +3062,7 @@ GameObject:
   - component: {fileID: 2069946351}
   m_Layer: 0
   m_Name: Platform4
-  m_TagString: Untagged
+  m_TagString: platform4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
