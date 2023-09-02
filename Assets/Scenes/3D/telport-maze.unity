@@ -2018,7 +2018,7 @@ PrefabInstance:
     - target: {fileID: 5184506419414971744, guid: 6a6927853b77c3f4db5d87ea16e2720f, type: 3}
       propertyPath: gameOverImage
       value: 
-      objectReference: {fileID: 1932583450}
+      objectReference: {fileID: 1098051809}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a6927853b77c3f4db5d87ea16e2720f, type: 3}
 --- !u!1 &730245385 stripped
@@ -2964,6 +2964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 304a8a513ef5fbe44bfaf9fab306d083, type: 3}
+--- !u!1 &1098051809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5912000559811524761, guid: ca73da7b619d5f24abe6c1df37ed32bb, type: 3}
+  m_PrefabInstance: {fileID: 560199577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1128322301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ddd95aa4817356645979f7a136313957, type: 3}
@@ -5460,7 +5465,7 @@ PrefabInstance:
     - target: {fileID: 5184506419414971744, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: gameOverImage
       value: 
-      objectReference: {fileID: 1932583450}
+      objectReference: {fileID: 1098051809}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
 --- !u!1 &1891139619 stripped
@@ -5662,11 +5667,6 @@ MonoBehaviour:
   player1Teleporting: 0
   player2Teleporting: 0
   delay: 1
---- !u!1 &1932583450 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5912000560373746091, guid: ca73da7b619d5f24abe6c1df37ed32bb, type: 3}
-  m_PrefabInstance: {fileID: 560199577}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1941534483
 PrefabInstance:
   m_ObjectHideFlags: 0

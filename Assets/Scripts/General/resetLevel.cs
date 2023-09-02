@@ -43,12 +43,13 @@ public class resetLevel : MonoBehaviour
 
         while (true)
         {
-            yield return new WaitForSeconds(1.0f);
-            countDown--;
             if (countDown == 0)
             {
                 DeactivateGameOverScreen();
             }
+            yield return new WaitForSeconds(1.0f);
+            countDown--;
+         
             countDownText.text = "Restarting in " + countDown + " seconds";
         }
     }

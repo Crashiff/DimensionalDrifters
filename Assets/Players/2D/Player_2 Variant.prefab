@@ -29,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3125313259443082523, guid: f5164d7bc9360ee499fdb7297728bebd, type: 3}
       propertyPath: m_Name
-      value: Player_2
+      value: Player_2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3125313259443082523, guid: f5164d7bc9360ee499fdb7297728bebd, type: 3}
       propertyPath: m_TagString
@@ -123,3 +123,18 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0, z: 0}
   justJumped: 0
   wasGrounded: 1
+--- !u!114 &3150045646397850052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830676582329565614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e34f3f13add65f44999008ed7fb8c22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mark: -10
+  gameOverImage: {fileID: 0}
+  countDownText: {fileID: 0}
