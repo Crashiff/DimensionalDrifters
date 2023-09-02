@@ -5,13 +5,6 @@ using UnityEngine;
 [ExecuteAlways]
 public class ChangeLayerOnCollision : MonoBehaviour
 {
-    //private GameObject buffer;
-
-    //void Start()
-    //{
-    //    buffer = GameObject.FindGameObjectWithTag("PlaneBuffer2D");
-    //}
-
     private void OnTriggerStay(Collider collision)
     {
         if (collision.gameObject.name == "PlaneBuffer2D")

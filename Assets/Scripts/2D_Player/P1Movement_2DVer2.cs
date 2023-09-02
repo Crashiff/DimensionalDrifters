@@ -21,16 +21,13 @@ public class P1Movement_2DVer2 : MonoBehaviour
 
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
-        //Debug.Log("Fall multiplier: " + fallMultiplier);
-        //Debug.Log("Jump multiplier: " + jumpMultiplier);
         if (controller.isGrounded)
         {
             wasGrounded = true;
             justJumped = false;
-            //Debug.Log("if (controller.isGrounded)");
             if (Input.GetButton("Jump"))
             {
-                //Debug.Log("if (controller.isGrounded) if (Input.GetButton(\"P2_Jump\"))");
+                gameObject.GetComponent<AudioSource>().Play();
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
                 moveDirection.y = jumpSpeed;
@@ -39,7 +36,6 @@ public class P1Movement_2DVer2 : MonoBehaviour
             }
             if (wasGrounded == true)
             {
-                //Debug.Log("if (controller.isGrounded) if (wasGrounded == true)");
                 wasGrounded = false;
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
@@ -49,10 +45,8 @@ public class P1Movement_2DVer2 : MonoBehaviour
 
         else if (justJumped && !controller.isGrounded)
         {
-            //Debug.Log("else if (justJumped && !controller.isGrounded) if (wasGrounded == true)");
             if (wasGrounded == true)
             {
-                //Debug.Log("if (controller.isGrounded) if (wasGrounded == true)");
                 wasGrounded = false;
                 fallMultiplier = 0.0f;
                 jumpMultiplier = 0.0f;
@@ -63,14 +57,12 @@ public class P1Movement_2DVer2 : MonoBehaviour
         }
         else if (justJumped && controller.isGrounded)
         {
-            //Debug.Log("else if (justJumped && controller.isGrounded)");
             justJumped = false;
             fallMultiplier = 0.0f;
             jumpMultiplier = 0.0f;
         }
         else if (!controller.isGrounded)
         {
-            //Debug.Log("else if (!controller.isGrounded)");
             justJumped = false;
             moveDirection.y = -(gravity + fallMultiplier);
             fallMultiplier += fallMultiplierIncrement;
@@ -83,6 +75,5 @@ public class P1Movement_2DVer2 : MonoBehaviour
     void OnCollisionEnter(Collision collision) 
     {
         jumpMultiplier = System.Math.Max(jumpSpeed, jumpMultiplier);
-        Debug.Log("hello");
     }
 }

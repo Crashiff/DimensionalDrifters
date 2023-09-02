@@ -15,7 +15,6 @@ public class LockAxis : MonoBehaviour
     private Vector3 startingPoint;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         playerController = GetComponent<CharacterController>();
@@ -24,7 +23,6 @@ public class LockAxis : MonoBehaviour
         startingPoint.z = GetComponent<Transform>().position.z;
     }
 
-    // Update is called once per frame
     void Update()
     {
         playerController.enabled = false;

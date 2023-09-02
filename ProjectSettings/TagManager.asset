@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Player1
   - Player2
+  - 1D_music
+  - platform1
+  - platform2
+  - platform3
+  - platform4
+  - platform5
   layers:
   - Default
   - TransparentFX

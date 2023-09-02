@@ -8,7 +8,6 @@ public class Rotate2DScreen : MonoBehaviour
     public Transform ScreenTransfrom;
     public float Speed = 1f;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.E))

@@ -42,12 +42,10 @@ public class Change2DPlayerOnCollision : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player1" && player1Turn)
         {
-            Debug.Log("p1");
             handleColission(1);
         }
         else if (collider.gameObject.tag == "Player2" && !player1Turn)
         {
-            Debug.Log("p2");
             handleColission(2);
         }
     }
@@ -112,13 +110,10 @@ public class Change2DPlayerOnCollision : MonoBehaviour
         Vector3 playerPosition1 = player1.transform.position;
         Vector3 playerPosition2 = player2.transform.position;
         int zValueOffset = option == 1 ? 2 : -2;
-        Debug.Log("hi " + playerPosition2.z);
         player1.transform.position = new Vector3(playerPosition2.x, playerPosition2.y, playerPosition2.z + zValueOffset);
-        Debug.Log("hi2 " + playerPosition2.z);
         player2.transform.position = new Vector3(playerPosition1.x, playerPosition1.y + 0.3f, playerPosition2.z);
         float differenceZ = player2.transform.position.z - playerPosition2.z;
 
-        Debug.Log("hi3 " + playerPosition2.z);
 
         ccPlayer1.enabled = true;
        ccPlayer2.enabled = true;
@@ -130,7 +125,6 @@ public class Change2DPlayerOnCollision : MonoBehaviour
 
     void switchColors(int option)
     {
-        Debug.Log("Colors swithed");
         GameObject player1Color2D = player1.transform.Find("Cube_2D_3D_Orange").gameObject.transform.Find("Color2D").gameObject;
         GameObject player1Element3D = player1.transform.Find("Cube_2D_3D_Orange").transform.Find("Element3D").gameObject;
         GameObject player2Color2D = player2.transform.Find("Cube_2D_3D_Blue").transform.Find("Color2D").gameObject;

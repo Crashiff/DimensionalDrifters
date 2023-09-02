@@ -10,7 +10,6 @@ public class changeGroundState : MonoBehaviour
     [SerializeField] Transform 
         transformRot;
 
-    // Update is called once per frame
     void Update()
     {
         if (transformRot.rotation.z < -50 || transformRot.rotation.z > 50)

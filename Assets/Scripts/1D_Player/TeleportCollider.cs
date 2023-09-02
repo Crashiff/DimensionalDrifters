@@ -25,7 +25,6 @@ public class TeleportCollider : MonoBehaviour
 
         if (collision.gameObject.tag == "Player1" && (player2.transform.position.x > xDest + 1 || player2.transform.position.x < xDest - 1))
         {
-            Debug.Log("Player1 coll");
             ccPlayer1.enabled = false;
             player1.transform.position = new Vector3(xDest, 0.54f, 8.02f); // (where you want to teleport)
             ccPlayer1.enabled = true;
@@ -33,7 +32,6 @@ public class TeleportCollider : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Player2" && (player1.transform.position.x > xDest + 1 || player1.transform.position.x < xDest - 1))
         {
-            Debug.Log("Player2 coll");
             ccPlayer2.enabled = false;
             player2.transform.position = new Vector3(xDest, 0.54f, 8.02f); // (where you want to teleport)
             ccPlayer2.enabled = true;

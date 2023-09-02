@@ -32,7 +32,6 @@ public class P2Movment : MonoBehaviour
     float distToGround;
     private Vector2 vevGravity;
 
-    // Start is called before the first frame update
     void Start()
     {
         vevGravity = new Vector2(0, -Physics2D.gravity.y);
@@ -69,9 +68,6 @@ void FixedUpdate()
         }
         if(rb.velocity.y < 0)
         {
-            Debug.Log(vevGravity);
-            Debug.Log(fallMultiplier);
-
             rb.velocity -= vevGravity * fallMultiplier * Time.deltaTime;
         }
     }
