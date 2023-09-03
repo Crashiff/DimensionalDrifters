@@ -4,22 +4,12 @@ using UnityEngine;
 
 public class CheckColors : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject platform1;
-    [SerializeField]
-    private GameObject platform2;
-    [SerializeField]
-    private GameObject platform3;
-    [SerializeField]
-    private GameObject platform4;
-    [SerializeField]
-    private GameObject platform5;
-    [SerializeField]
-    private Material player1Color;
-    [SerializeField]
-    private Material player2Color;
-    [SerializeField]
-    private Material original;
+ 
+    public int platform1_color;
+    public int platform2_color;
+    public int platform3_color;
+    public int platform4_color;
+    public int platform5_color;
 
 
 
@@ -32,17 +22,12 @@ public class CheckColors : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Material platform1_color = platform1.GetComponent<MeshRenderer>().material;
-        Material platform2_color = platform2.GetComponent<MeshRenderer>().material;
-        Material platform3_color = platform3.GetComponent<MeshRenderer>().material;
-        Material platform4_color = platform4.GetComponent<MeshRenderer>().material;
-        Material platform5_color = platform5.GetComponent<MeshRenderer>().material;
-        if (platform1_color == player2Color && platform2_color == player1Color && platform3_color == player2Color && platform4_color == player1Color && platform5_color == player2Color)
+        if (platform1_color == 2 && platform2_color == 1 && platform3_color == 2 && platform4_color == 1 && platform5_color == 2)
         {
             Debug.Log("yay1");
         }
 
-        else if (platform1_color == player2Color && platform2_color == player1Color && platform3_color == original && platform4_color == player2Color && platform5_color == player1Color)
+        else if (platform1_color == 2 && platform2_color == 1 && platform3_color == 0 && platform4_color == 2 && platform5_color == 1)
         {
             Debug.Log("yay2");
         }

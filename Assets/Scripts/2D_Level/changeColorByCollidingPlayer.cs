@@ -5,7 +5,6 @@ using UnityEngine;
 public class changeColorByCollidingPlayer : MonoBehaviour
 {
     public float xDest = 19.9f;
-    private bool didChange = false;
     [SerializeField]
     private Material original;
     [SerializeField]
@@ -19,7 +18,7 @@ public class changeColorByCollidingPlayer : MonoBehaviour
     private GameObject platform3;
     private GameObject platform4;
     private GameObject platform5;
-
+    public CheckColors checkColorsScript;
 
     private void Start()
     {
@@ -34,20 +33,64 @@ public class changeColorByCollidingPlayer : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
 
-        if (collision.gameObject.tag == "Player1" && !didChange)
+        if (collision.gameObject.tag == "Player1")
         {
             platformToChange.GetComponent<MeshRenderer>().material = player1Color;
-            didChange = true; 
-            checkColors();
-
+            updateCheckColorScript(1);
+            Invoke("resetToOriginalColor", 60f);
         }
-        else if (collision.gameObject.tag == "Player2" && !didChange)
+        else if (collision.gameObject.tag == "Player2")
         {
 
             platformToChange.GetComponent<MeshRenderer>().material = player2Color;
-            didChange = true;
-            checkColors();
+            updateCheckColorScript(2);
+            Invoke("resetToOriginalColor", 30f);
         }
+    }
+    private void updateCheckColorScript(int color)
+    {
+        string tag = platformToChange.tag;
+        int platform = tag[tag.Length - 1] - '0';
+        Debug.Log("plat is " + platform);
+        switch(platform)
+        {
+            case 1:
+                {
+                    Debug.Log("case 1");
+                    checkColorsScript.platform1_color = color;
+                    break;
+                }
+            case 2:
+                {
+                    Debug.Log("case 2");
+                    checkColorsScript.platform2_color = color;
+                        break;  
+                }
+            case 3:
+                {
+                    Debug.Log("case 3");
+                    checkColorsScript.platform3_color = color;
+                    break;
+                }
+            case 4:
+                {
+                    Debug.Log("case 4");
+                    checkColorsScript.platform4_color = color;
+                    break;
+                }
+            case 5:
+                {
+                    Debug.Log("case 5");
+                    checkColorsScript.platform5_color = color;
+                    break;
+                }
+        }
+    }
+
+    public void resetToOriginalColor()
+    {
+        platformToChange.GetComponent<MeshRenderer>().material = original;
+        updateCheckColorScript(0);
     }
 
     private void OnTriggerExit(Collider collision)
@@ -57,28 +100,7 @@ public class changeColorByCollidingPlayer : MonoBehaviour
         if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
         {
             this.GetComponent<MeshRenderer>().material = original;
-            didChange = false;
         }
     }
-
-    private void checkColors()
-    {
-        Material platform1_color = platform1.GetComponent<MeshRenderer>().material;
-        Material platform2_color = platform2.GetComponent<MeshRenderer>().material;
-        Material platform3_color = platform3.GetComponent<MeshRenderer>().material;
-        Material platform4_color = platform4.GetComponent<MeshRenderer>().material;
-        Material platform5_color = platform5.GetComponent<MeshRenderer>().material;
-        if (platform1_color == player2Color && platform2_color == player1Color && platform3_color == player2Color && platform4_color == player1Color && platform5_color == player2Color)
-        {
-            Debug.Log("yay1");
-        }
-
-        else if (platform1_color == player2Color && platform2_color == player1Color && platform3_color == original && platform4_color == player2Color && platform5_color == player1Color)
-        {
-            Debug.Log("yay2");
-        }
-
-    }
-
 }
 
