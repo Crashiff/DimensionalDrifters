@@ -12,6 +12,8 @@ TagManager:
   - platform3
   - platform4
   - platform5
+  - colorRow1
+  - colorRow2
   layers:
   - Default
   - TransparentFX
