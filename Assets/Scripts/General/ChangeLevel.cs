@@ -6,26 +6,35 @@ using UnityEngine.SceneManagement;
 public class ChangeLevel : MonoBehaviour
 {
 
-    static int player1Counter = 0;
-    static int player2Counter = 0;
+    static bool player1Counter = false;
+    static bool player2Counter = false;
     public float delayTime = 2f;
     public string nextSceneName;
 
+    private bool isTriggered = false;
+
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Player1" && player1Counter == 0)
+        if (!isTriggered) 
         {
-            player1Counter++;
-        }
-        if (collider.gameObject.tag == "Player2" && player2Counter == 0)
-        {
-            player2Counter++;
-        }
-        if (player1Counter == 1 && player2Counter == 1)
-        {
-            player1Counter = 0;
-            player2Counter = 0;
-            Invoke("LoadLevel", delayTime);
+            
+            Debug.Log("TriggerEnter " + collider);
+            if (collider.gameObject.CompareTag("Player1") && !player1Counter)
+            {
+                isTriggered = true;
+                player1Counter = true;
+            }
+            if (collider.gameObject.CompareTag("Player2") && !player2Counter)
+            {
+                isTriggered = true;
+                player2Counter = true;
+            }
+            if (player1Counter && player2Counter)
+            {
+                player1Counter = false;
+                player2Counter = false;
+                Invoke("LoadLevel", delayTime);
+            }
         }
     }
 
@@ -36,13 +45,16 @@ public class ChangeLevel : MonoBehaviour
 
     private void OnTriggerExit(Collider collider)
     {
-        if (collider.gameObject.tag == "Player1" && player1Counter == 1)
+        Debug.Log("TriggerEnter " + collider);
+        if (collider.gameObject.CompareTag("Player1") && player1Counter)
         {
-            player1Counter--;
+            isTriggered = false;
+            player1Counter = false;
         }
-        if (collider.gameObject.tag == "Player2" && player2Counter == 1)
+        if (collider.gameObject.CompareTag("Player2") && player2Counter)
         {
-            player2Counter--;
+            isTriggered = false;
+            player2Counter = false;
         }
     }
 }

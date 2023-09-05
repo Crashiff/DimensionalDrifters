@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 635f51e4a41ba9f45be9205ebf8f27af, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 691e69b6ae4656c4ebf24b676e7db1c4, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -763,6 +763,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1010793409, guid: 53673cd3a7643b8488e9536dcf1f91b6, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010793409, guid: 53673cd3a7643b8488e9536dcf1f91b6, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8092112574065717394, guid: 53673cd3a7643b8488e9536dcf1f91b6, type: 3}
       propertyPath: m_Name
       value: Player_1 Variant
@@ -1014,6 +1022,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1653479666, guid: ec92e1702493a854fb022a7dcf2228a7, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653479666, guid: ec92e1702493a854fb022a7dcf2228a7, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653479667, guid: ec92e1702493a854fb022a7dcf2228a7, type: 3}
+      propertyPath: gravity
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5830676582329565609, guid: ec92e1702493a854fb022a7dcf2228a7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2510,6 +2530,7 @@ GameObject:
   - component: {fileID: 1498774951}
   - component: {fileID: 1498774950}
   - component: {fileID: 1498774949}
+  - component: {fileID: 1498774953}
   m_Layer: 0
   m_Name: platform5
   m_TagString: platform5
@@ -2595,6 +2616,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!54 &1498774953
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498774948}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1520628153 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6709099639859692784, guid: 1dd0a05bd97deb54ebd2e71092c93863, type: 3}
@@ -2627,6 +2664,7 @@ GameObject:
   - component: {fileID: 1684330077}
   - component: {fileID: 1684330076}
   - component: {fileID: 1684330075}
+  - component: {fileID: 1684330079}
   m_Layer: 0
   m_Name: Platform2
   m_TagString: platform2
@@ -2712,6 +2750,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!54 &1684330079
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684330074}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1864668351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,6 +3056,7 @@ GameObject:
   - component: {fileID: 1990513681}
   - component: {fileID: 1990513680}
   - component: {fileID: 1990513684}
+  - component: {fileID: 1990513685}
   m_Layer: 0
   m_Name: platform1
   m_TagString: platform1
@@ -3087,6 +3142,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1.0000002, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1990513685
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990513678}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2069946350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,6 +3170,7 @@ GameObject:
   - component: {fileID: 2069946353}
   - component: {fileID: 2069946352}
   - component: {fileID: 2069946351}
+  - component: {fileID: 2069946355}
   m_Layer: 0
   m_Name: Platform4
   m_TagString: platform4
@@ -3184,6 +3256,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!54 &2069946355
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069946350}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2099648952
 GameObject:
   m_ObjectHideFlags: 0
