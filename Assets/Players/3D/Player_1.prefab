@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 5184506418778583296}
   - component: {fileID: 5184506418778583299}
   - component: {fileID: 5184506418778583298}
+  - component: {fileID: 1677131309}
   m_Layer: 0
   m_Name: Camera3D
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5184506418778583421}
   m_LocalRotation: {x: 0.17121397, y: 0.0007365926, z: -0.004238609, w: 0.9852245}
-  m_LocalPosition: {x: -0.36, y: 9.67, z: -14.92}
+  m_LocalPosition: {x: -0.361, y: 9.544, z: -14.966}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64,7 +65,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4950
+    m_Bits: 6998
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -84,6 +85,23 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5184506418778583421}
   m_Enabled: 1
+--- !u!114 &1677131309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5184506418778583421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466c15a901e84a34997347b669b7f4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5184506419414971723}
+  moveSpeed: 5
+  maxDistance: 2
+  maxDistanceBehind: 1
+  InitiatedPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5184506419120625764
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,9 +372,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2429803494319476761, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_TagString
+      value: Player1
+      objectReference: {fileID: 0}
     - target: {fileID: 2429803494723302398, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429803494723302398, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_TagString
+      value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714862, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_RootOrder
@@ -417,6 +443,14 @@ PrefabInstance:
     - target: {fileID: 2429803494929714863, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Name
       value: Cube_2D_3D_Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429803494929714863, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_TagString
+      value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3499409753350770936, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_TagString
+      value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 5667475229633473889, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Enabled
