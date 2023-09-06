@@ -45,6 +45,15 @@ public class PauseMenu : MonoBehaviour
     public void LoadMainMenu()
     {
         Resume();
+        GameObject[] audioSources = GameObject.FindGameObjectsWithTag("music");
+        foreach(GameObject obj in audioSources)
+        {
+           // if (obj.name != "AudioSource1")
+          //  {
+                Destroy(obj);
+          //  }
+        }
+        ActivateMusic.ClearPlaying();
         SceneManager.LoadScene(sceneName: "mainMenu");
     }
 }

@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class ActivateMusic : MonoBehaviour
 {
-    static bool isPlaying = false;
+    public static bool isPlaying = false;
     private AudioSource audioSource;
     // Start is called before the first frame update
+
+
+    public static void ClearPlaying()
+    {
+        isPlaying = false;
+    }
 
     private void Awake()
     {
