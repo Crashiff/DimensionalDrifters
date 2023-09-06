@@ -1844,6 +1844,7 @@ GameObject:
   - component: {fileID: 738239570}
   - component: {fileID: 738239569}
   - component: {fileID: 738239568}
+  - component: {fileID: 738239572}
   - component: {fileID: 738239571}
   m_Layer: 0
   m_Name: AudioSource4
@@ -1988,6 +1989,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfToDestoryObject: AudioSource3
+--- !u!114 &738239572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738239567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0881ad6f38831794a9b9f7db2d6416af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &761352428 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ddd95aa4817356645979f7a136313957, type: 3}
