@@ -37,14 +37,14 @@ public class changeColorByCollidingPlayer : MonoBehaviour
         {
             platformToChange.GetComponent<MeshRenderer>().material = player1Color;
             updateCheckColorScript(1);
-            Invoke("resetToOriginalColor", 60f);
+            Invoke("resetToOriginalColor", 45f);
         }
         else if (collision.gameObject.tag == "Player2")
         {
 
             platformToChange.GetComponent<MeshRenderer>().material = player2Color;
             updateCheckColorScript(2);
-            Invoke("resetToOriginalColor", 30f);
+            Invoke("resetToOriginalColor", 45f);
         }
     }
     private void updateCheckColorScript(int color)
@@ -56,31 +56,26 @@ public class changeColorByCollidingPlayer : MonoBehaviour
         {
             case 1:
                 {
-                    Debug.Log("case 1");
                     checkColorsScript.platform1_color = color;
                     break;
                 }
             case 2:
                 {
-                    Debug.Log("case 2");
                     checkColorsScript.platform2_color = color;
                         break;  
                 }
             case 3:
                 {
-                    Debug.Log("case 3");
                     checkColorsScript.platform3_color = color;
                     break;
                 }
             case 4:
                 {
-                    Debug.Log("case 4");
                     checkColorsScript.platform4_color = color;
                     break;
                 }
             case 5:
                 {
-                    Debug.Log("case 5");
                     checkColorsScript.platform5_color = color;
                     break;
                 }
@@ -91,16 +86,6 @@ public class changeColorByCollidingPlayer : MonoBehaviour
     {
         platformToChange.GetComponent<MeshRenderer>().material = original;
         updateCheckColorScript(0);
-    }
-
-    private void OnTriggerExit(Collider collision)
-    {
-        var cubeRenderer = GetComponent<Renderer>();
-
-        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
-        {
-            this.GetComponent<MeshRenderer>().material = original;
-        }
     }
 }
 
