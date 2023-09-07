@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonTrying 3
+  m_Name: Black
   m_Shader: {fileID: 4800000, guid: def062eb0cbf68840ae371a14b0b8dbc, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
