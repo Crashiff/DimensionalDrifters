@@ -1720,7 +1720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: telport-maze
+  nextSceneName: pre-maze
 --- !u!1001 &1653416075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2311,7 +2311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: telport-maze
+  nextSceneName: pre-maze
 --- !u!1001 &2958616504308572879
 PrefabInstance:
   m_ObjectHideFlags: 0
