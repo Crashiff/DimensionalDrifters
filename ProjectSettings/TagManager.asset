@@ -16,6 +16,7 @@ TagManager:
   - colorRow2
   - music
   - IgnoreCameraBlock
+  - kill
   layers:
   - Default
   - TransparentFX

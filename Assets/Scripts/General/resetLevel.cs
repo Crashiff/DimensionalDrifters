@@ -22,17 +22,22 @@ public class resetLevel : MonoBehaviour
     {
         if (this.transform.position.y < mark)
         {
-            ActivateGameOverScreen();
-            if (!isCoroutineRunning)
-            {
-                StartCoroutine(SpawnTimer());
-
-            }
+            ActivateScreenProcess();
         }
 
     }
 
-    void ActivateGameOverScreen()
+    public void ActivateScreenProcess()
+    {
+        ActivateGameOverScreen();
+        if (!isCoroutineRunning)
+        {
+            StartCoroutine(SpawnTimer());
+
+        }
+    }
+
+     void ActivateGameOverScreen()
     {
         gameOverImage.SetActive(true);
     }

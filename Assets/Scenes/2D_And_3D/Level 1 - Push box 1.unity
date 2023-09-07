@@ -541,6 +541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_2D_3D_Orange
       objectReference: {fileID: 0}
+    - target: {fileID: 2429803494929714863, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
 --- !u!1 &1244334920
@@ -1462,6 +1466,10 @@ PrefabInstance:
     - target: {fileID: 5184506419414971744, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: gameOverScreen
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907442553011184548, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7528113249971394562, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: m_RootOrder
