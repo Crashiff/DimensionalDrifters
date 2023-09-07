@@ -50,7 +50,12 @@ public class HandleCameraBlocked : MonoBehaviour
         {
             //Debug.Log(hit.collider.gameObject);
             //Check by tag (all child obbjects were given the same taG)
-            if ((!hit.collider.gameObject.CompareTag("Player1") && !hit.collider.gameObject.CompareTag("Player2") && !hit.collider.gameObject.CompareTag("IgnoreCameraBlock")) || BlockedFromBehind())
+            if ((!hit.collider.gameObject.CompareTag("Player1") && 
+                !hit.collider.gameObject.CompareTag("Player2") && 
+                !hit.collider.gameObject.CompareTag("IgnoreCameraBlock") &&
+                !hit.collider.gameObject.CompareTag("Player1Child") &&
+                !hit.collider.gameObject.CompareTag("Player2Child")
+                ) || BlockedFromBehind())
             {
                 //Debug.Log("if (Physics.Raycast(ray, out hit, maxDistance)) inside if");
                 //Calculate the new camera position closer to the player.

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1677131309}
   m_Layer: 0
   m_Name: Camera3D
-  m_TagString: Player1
+  m_TagString: Player1Child
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -486,7 +486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494319476761, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_TagString
-      value: Player1
+      value: Player1Child
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494723302398, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Layer
@@ -494,7 +494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494723302398, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_TagString
-      value: Player1
+      value: Player1Child
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714862, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_RootOrder
@@ -558,11 +558,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714863, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_TagString
-      value: Player1
+      value: Player1Child
       objectReference: {fileID: 0}
     - target: {fileID: 3499409753350770936, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_TagString
-      value: Player1
+      value: Player1Child
       objectReference: {fileID: 0}
     - target: {fileID: 5667475229633473889, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Enabled
