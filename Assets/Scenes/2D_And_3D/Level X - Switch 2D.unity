@@ -197,7 +197,7 @@ PrefabInstance:
     - target: {fileID: 7002520349315759111, guid: 5bc4c91ae955ac74f9f511e8f34a6f77, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1767272272}
+      objectReference: {fileID: 409014898}
     - target: {fileID: 7002520349315759111, guid: 5bc4c91ae955ac74f9f511e8f34a6f77, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -435,7 +435,7 @@ PrefabInstance:
     - target: {fileID: 44571057068864133, guid: b18e4eb140c18bc44a815e8eab97bd29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2086062269}
+      objectReference: {fileID: 2100000, guid: e1421d9bbf5335a4e81905666da7928a, type: 2}
     - target: {fileID: 2429803494319476761, guid: b18e4eb140c18bc44a815e8eab97bd29, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -862,6 +862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_2D_3D_Orange
       objectReference: {fileID: 0}
+    - target: {fileID: 2429803494929714863, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_TagString
+      value: kill
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
 --- !u!1 &1419334274 stripped
@@ -1239,11 +1243,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1289360529979275977, guid: 73894369c3c2eda4eb77f7df94864d8e, type: 3}
   m_PrefabInstance: {fileID: 1664338616}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1767272272 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7002520349315759109, guid: 5bc4c91ae955ac74f9f511e8f34a6f77, type: 3}
-  m_PrefabInstance: {fileID: 72227975}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1911500507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,84 +1434,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayTime: 2
   nextSceneName: Level Y - Moving 2D 1
---- !u!21 &2086062269
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Brown (Instance) (Instance)
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1001 &2958616504308572879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1802,6 +1723,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5184506418778583298, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5184506418778583421, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: m_TagString
       value: Player1Child
