@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: secondLevel
+  nextSceneName: First4D
 --- !u!1 &1113983786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7868163550162116300, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
@@ -667,7 +667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: secondLevel
+  nextSceneName: First4D
 --- !u!1 &1170292913
 GameObject:
   m_ObjectHideFlags: 0

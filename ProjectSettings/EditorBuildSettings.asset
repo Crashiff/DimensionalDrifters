@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3D/telport-maze 1.unity
     guid: 8c9d5480ed793604da0ecc5123b5aab3
+  - enabled: 1
+    path: Assets/Scenes/4D/First4D.unity
+    guid: 4382b1f8ad5bd644080f5403369e9890
   m_configObjects: {}
