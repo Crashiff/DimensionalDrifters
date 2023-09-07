@@ -18,6 +18,7 @@ TagManager:
   - IgnoreCameraBlock
   - kill
   - Player1Child
+  - Player2Child
   layers:
   - Default
   - TransparentFX
