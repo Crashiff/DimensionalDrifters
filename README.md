@@ -66,8 +66,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url] -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 Name: Natanel Shiff ID: 302381389
 
 Name: Tal Ben Zvi ID: 209130707
