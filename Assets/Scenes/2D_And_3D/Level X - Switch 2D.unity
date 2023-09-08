@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: Level Y - Moving 2D 1
+  nextSceneName: Level Y - Moving 2D
 --- !u!1 &1607298484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2429803494929714863, guid: 80c3e1f706fcb5a44a13ec36a5a00f48, type: 3}
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: Level Y - Moving 2D 1
+  nextSceneName: Level Y - Moving 2D
 --- !u!1001 &2958616504308572879
 PrefabInstance:
   m_ObjectHideFlags: 0

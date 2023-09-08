@@ -17,11 +17,11 @@ public class Settings : MonoBehaviour
             continue; 
         }
 
-        if (!(renderer.gameObject.name == "Element3D"))
+        if (!(renderer.gameObject.name == "Element3D") || renderer.sharedMaterial.name == "White")
         {
             continue; 
         }
-
+        
         if (useFolder1)
         {
             Debug.Log("Assets/Materials/Standard/" + renderer.sharedMaterial.name + ".mat");

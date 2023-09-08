@@ -94,7 +94,7 @@ Shader "Toon"
 				float3 viewDir = normalize(i.viewDir);
 
 				// Lighting below is calculated using Blinn-Phong,
-				// with values thresholded to creat the "toon" look.
+				// with values thresholded to create the "toon" look.
 				// https://en.wikipedia.org/wiki/Blinn-Phong_shading_model
 
 				// Calculate illumination from directional light.
@@ -105,27 +105,41 @@ Shader "Toon"
 				// Samples the shadow map, returning a value in the 0...1 range,
 				// where 0 is in the shadow, and 1 is not.
 				float shadow = SHADOW_ATTENUATION(i);
+				
 				// Partition the intensity into light and dark, smoothly interpolated
 				// between the two to avoid a jagged break.
-				float lightIntensity = smoothstep(0, 0.01, NdotL * shadow);	
+				float lightIntensity = smoothstep(0.0, 0.05, NdotL * shadow);	
+				
 				// Multiply by the main directional light's intensity and color.
 				float4 light = lightIntensity * _LightColor0;
 
 				// Calculate specular reflection.
 				float3 halfVector = normalize(_WorldSpaceLightPos0 + viewDir);
 				float NdotH = dot(normal, halfVector);
-				// Multiply _Glossiness by itself to allow artist to use smaller
+				
+				// Multiply _Glossiness by itself to allow artists to use smaller
 				// glossiness values in the inspector.
 				float specularIntensity = pow(NdotH * lightIntensity, _Glossiness * _Glossiness);
-				float specularIntensitySmooth = smoothstep(0.005, 0.01, specularIntensity);
-				float4 specular = specularIntensitySmooth * _SpecularColor;				
+				
+				// Apply a smoothstep to the specular intensity to control the transition
+				// from the lit to the unlit side.
+				float specularIntensitySmooth = smoothstep(0.01, 0.05, specularIntensity);
+				
+				// Multiply by the specular color.
+				float4 specular = specularIntensitySmooth * _SpecularColor;
 
 				// Calculate rim lighting.
 				float rimDot = 1 - dot(viewDir, normal);
+				
 				// We only want rim to appear on the lit side of the surface,
 				// so multiply it by NdotL, raised to a power to smoothly blend it.
 				float rimIntensity = rimDot * pow(NdotL, _RimThreshold);
-				rimIntensity = smoothstep(_RimAmount - 0.01, _RimAmount + 0.01, rimIntensity);
+				
+				// Apply a smoothstep to the rim intensity to control the transition
+				// from the lit to the unlit side.
+				rimIntensity = smoothstep(0.1, 0.3, rimIntensity);
+				
+				// Multiply by the rim color.
 				float4 rim = rimIntensity * _RimColor;
 
 				float4 sample = tex2D(_MainTex, i.uv);
