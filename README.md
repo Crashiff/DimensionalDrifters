@@ -1,15 +1,17 @@
-# Dimensional Drifter
+<h1 align="center" style="font-size: 50px;">Dimensional Drifter</h1>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![MIT License][license-shield]][license-url]</h1>
+
 
 <div align="center">
-  <h2><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center;">Play the game!</a></h2>
+  <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Play the game!</a></h1>
 </div>
+
+
 
 <div align="center">
 
@@ -23,10 +25,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Game trailer:  
+[![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg)](https://www.youtube.com/embed/<VIDEO_ID>)
 
-Game link: COMPLETE LINK HERE
-
-Game trailer: COMPLETE LINK HERE
+[<img src="https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/<VIDEO_ID>)
 
 # Game sammary
 Dimensional Drifters is a unique two-player game that takes you on a journey through different dimensions. Players control cubes and must solve riddles at each stage to progress to the next dimension, showcasing the fascinating differences between one-dimensional, two-dimensional, three-dimensional, and four-dimensional worlds.
@@ -66,9 +69,11 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url] -->
 
-Name: Natanel Shiff ID: 302381389
+Name: Natanel Shiff ID: 302381389  
+[![LinkedIn][linkedin-shield]][linkedin-url-natanel]
 
-Name: Tal Ben Zvi ID: 209130707
+Name: Tal Ben Zvi ID: 209130707  
+[![LinkedIn][linkedin-shield]][linkedin-url-tal]
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -84,7 +89,8 @@ Name: Tal Ben Zvi ID: 209130707
 [license-shield]: https://img.shields.io/github/license/Crashiff/DimensionalDrifters.svg?style=for-the-badge
 [license-url]: https://github.com/Crashiff/DimensionalDrifters/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/Crashiff/DimensionalDrifters
+[linkedin-url-natanel]: https://linkedin.com/in/Crashif
+[linkedin-url-tal]: https://linkedin.com/in/tal-ben-zvi-40552a1b2
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
