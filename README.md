@@ -4,7 +4,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]</h1>
+[![MIT License][license-shield]][license-url]
+[![HitCount][hit-shield]][hit-url]
 
 
 <div align="center">
@@ -52,9 +53,6 @@ Dimensional Drifters is a unique two-player game that takes you on a journey thr
 --GIF HERE--
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ### Built With
 
@@ -69,12 +67,23 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url] -->
 
-Name: Natanel Shiff ID: 302381389  
+# About us
+
+<p>
+<a href="https://github.com/Crashiff"><img title="Author" src="https://img.shields.io/badge/Author-Natanel Shiff-black.svg?style=for-the-badge&logo=github" alt=""></a>
+</p>
+
 [![LinkedIn][linkedin-shield]][linkedin-url-natanel]
 
-Name: Tal Ben Zvi ID: 209130707  
+<br>
+<p>
+<a href="https://github.com/BzTal"><img title="Author" src="https://img.shields.io/badge/Author-Tal Ben Zvi-black.svg?style=for-the-badge&logo=github" alt=""></a>
+</p>
+
 [![LinkedIn][linkedin-shield]][linkedin-url-tal]
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -82,6 +91,8 @@ Name: Tal Ben Zvi ID: 209130707
 [contributors-url]: https://github.com/Crashiff/DimensionalDrifters/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Crashiff/DimensionalDrifters.svg?style=for-the-badge
 [forks-url]: https://github.com/Crashiff/DimensionalDrifters/network/members
+[hit-shield]: https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FCrashiff%2FDimensionalDrifters.svg%3Fstyle%3Dfor-the-badge&style=for-the-badge&color=blue
+[hit-url]: http://hits.dwyl.com/Crashiff/DimensionalDrifters
 [stars-shield]: https://img.shields.io/github/stars/Crashiff/DimensionalDrifters.svg?style=for-the-badge
 [stars-url]: https://github.com/Crashiff/DimensionalDrifters/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Crashiff/DimensionalDrifters.svg?style=for-the-badge
