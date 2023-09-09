@@ -19,6 +19,7 @@ TagManager:
   - kill
   - Player1Child
   - Player2Child
+  - changeVolumeSlider
   layers:
   - Default
   - TransparentFX
