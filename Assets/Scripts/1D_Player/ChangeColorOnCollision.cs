@@ -17,7 +17,7 @@ public class ChangeColorOnCollision : MonoBehaviour
     {
     }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerStay(Collider collision)
     {
 
         if (collision.gameObject.tag == "Player1" && !didChange)

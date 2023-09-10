@@ -17,8 +17,9 @@ public class ChangeLevel : MonoBehaviour
     {
         if (!isTriggered) 
         {
-            
+            Debug.Log("Hello world");
             Debug.Log("TriggerEnter " + collider);
+
             if (collider.gameObject.CompareTag("Player1") && !player1Counter)
             {
                 isTriggered = true;
@@ -29,11 +30,12 @@ public class ChangeLevel : MonoBehaviour
                 isTriggered = true;
                 player2Counter = true;
             }
+                        Debug.Log("Player 1 " + player1Counter);
+            Debug.Log("Player 2 " + player2Counter);
             if (player1Counter && player2Counter)
             {
-                player1Counter = false;
-                player2Counter = false;
-                Invoke("LoadLevel", delayTime);
+                Debug.Log("Loading level ");
+                Invoke("TryLoadLevel", delayTime);
             }
         }
     }
@@ -43,18 +45,27 @@ public class ChangeLevel : MonoBehaviour
         SceneManager.LoadScene(sceneName: nextSceneName);
     }
 
+    void TryLoadLevel()
+    {
+        if (player1Counter == true && player2Counter == true)
+        {
+            player1Counter = false;
+            player2Counter = false;
+            LoadLevel();
+        }
+    }
+
     private void OnTriggerExit(Collider collider)
     {
-        Debug.Log("TriggerEnter " + collider);
+        Debug.Log("TriggerExit " + collider);
         if (collider.gameObject.CompareTag("Player1") && player1Counter)
         {
-            isTriggered = false;
             player1Counter = false;
         }
         if (collider.gameObject.CompareTag("Player2") && player2Counter)
         {
-            isTriggered = false;
             player2Counter = false;
         }
+        isTriggered = false;
     }
 }

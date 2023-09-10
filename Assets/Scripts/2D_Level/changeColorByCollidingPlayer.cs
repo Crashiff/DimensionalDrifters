@@ -36,13 +36,15 @@ public class changeColorByCollidingPlayer : MonoBehaviour
         if (collision.gameObject.tag == "Player1")
         {
             platformToChange.GetComponent<MeshRenderer>().material = player1Color;
+            gameObject.GetComponent<MeshRenderer>().material = player1Color;
             updateCheckColorScript(1);
-            Invoke("resetToOriginalColor", 45f);
+            Invoke("resetToOriginalColor", 35f);
         }
         else if (collision.gameObject.tag == "Player2")
         {
 
             platformToChange.GetComponent<MeshRenderer>().material = player2Color;
+            gameObject.GetComponent<MeshRenderer>().material = player2Color;
             updateCheckColorScript(2);
             Invoke("resetToOriginalColor", 45f);
         }
@@ -85,6 +87,7 @@ public class changeColorByCollidingPlayer : MonoBehaviour
     public void resetToOriginalColor()
     {
         platformToChange.GetComponent<MeshRenderer>().material = original;
+        gameObject.GetComponent<MeshRenderer>().material = original;
         updateCheckColorScript(0);
     }
 }

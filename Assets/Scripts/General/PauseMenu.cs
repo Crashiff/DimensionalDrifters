@@ -9,6 +9,13 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject PauseMenuUI;
 
+    void Start()
+    {
+        GameObject borderObject = transform.Find("Border").gameObject;
+
+        CheckForMultipleCameras(borderObject);
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -21,7 +28,22 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
+    void CheckForMultipleCameras(GameObject borderObject)
+    {
+        Camera[] cameras = FindObjectsOfType<Camera>();
 
+        // If there is more than one camera in the scene
+        if (cameras.Length > 1)
+        {
+            // Activate the 'Border' object
+            borderObject.SetActive(true);
+        }
+        else
+        {
+            // Deactivate the 'Border' object
+            borderObject.SetActive(false);
+        }
+    }
     public void Resume() 
     {
         PauseMenuUI.SetActive(false);

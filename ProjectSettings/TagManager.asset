@@ -18,6 +18,9 @@ TagManager:
   - IgnoreCameraBlock
   - kill
   - Player1Child
+  - Player2Child
+  - changeVolumeSlider
+  - instruction
   layers:
   - Default
   - TransparentFX
