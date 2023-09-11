@@ -35,6 +35,8 @@ Shader "Custom/SliceView2"
 			half3 _Emission;
 
 			float4 _Plane;
+			float4 _Plane2;
+			
 
 			float4 _CutoffColor;
 
@@ -52,6 +54,11 @@ Shader "Custom/SliceView2"
 				distance = distance + _Plane.w;
 				//discard surface above plane
 				clip(-distance);
+
+				float distance2 = dot(i.worldPos, _Plane2.xyz);
+				distance2 = distance2 + _Plane2.w;
+				//discard surface above plane
+				clip(-distance2);
 
 				float facing = i.facing * 0.5 + 0.5;
 

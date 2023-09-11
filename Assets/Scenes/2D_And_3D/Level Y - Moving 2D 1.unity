@@ -314,6 +314,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 44571057068864133, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c7a3821ec221d634ea1655dd583fa625, type: 2}
     - target: {fileID: 1979923894531611171, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -330,6 +334,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 2429803494723302395, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6eedb87f9c063fa49b180d0df63c08c5, type: 2}
     - target: {fileID: 2429803494723302398, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Layer
       value: 0
