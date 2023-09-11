@@ -64,6 +64,12 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void OpenInstructions()
+    {
+        GameObject instructionScreen = GameObject.FindGameObjectWithTag("instruction");
+        instructionScreen.SetActive(true);
+    }
+
     public void LoadMainMenu()
     {
         Resume();
