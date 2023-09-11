@@ -521,7 +521,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Radius: 0.5000002
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &847236084
 PrefabInstance:
@@ -572,15 +572,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714862, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.4218
+      value: 5.399018
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714862, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.4218
+      value: 5.399018
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714862, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.4218
+      value: 5.399018
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714862, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -626,6 +626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KillBall
       objectReference: {fileID: 0}
+    - target: {fileID: 2429803494929714863, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_TagString
+      value: kill
+      objectReference: {fileID: 0}
     - target: {fileID: 3499409753350770936, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_TagString
       value: kill
@@ -636,15 +640,15 @@ PrefabInstance:
       objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 8520171322056269885, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6276
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8520171322056269885, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6276
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8520171322056269885, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.6276
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6921067516827407287, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
@@ -1023,7 +1027,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Radius: 0.5000002
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1244334920
 GameObject:
@@ -1387,6 +1391,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1608987478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608987459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f575bf7cf05bdc74d96744496b609689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 1608987460}
+  source: {fileID: 1608987469}
 --- !u!1 &1677740612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5912000559811524761, guid: ca73da7b619d5f24abe6c1df37ed32bb, type: 3}
@@ -1420,7 +1438,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.53
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1730721785
 Rigidbody:
@@ -1956,7 +1974,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Radius: 0.5000002
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2109824847
 PrefabInstance:
@@ -2173,8 +2191,20 @@ PrefabInstance:
       value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 166714347794140043, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
-      propertyPath: m_IsTrigger
+      propertyPath: m_Size.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 166714347794140043, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 166714347794140043, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 166714347794140043, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 166714347794140046, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
       propertyPath: m_RootOrder
@@ -2282,8 +2312,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3336786817662922275, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
-      propertyPath: m_IsTrigger
+      propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336786817662922275, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5184506418778583421, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: m_IsActive
