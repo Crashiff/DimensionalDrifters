@@ -45,23 +45,26 @@ Dimensional Drifters is a unique two-player game that takes you on a journey thr
 # Gameplay
 1D World: Begin your journey in a one-dimensional world, where movement is limited to a single line. Solve riddles that challenge your understanding of linear space and logic.
 
----GIF HERE----
+![Unity WebGL Player _ Dimensional Drifter and 8 more pages - Personal - Microsoft_ Edge 2023-09-12 02-43-55](https://github.com/Crashiff/DimensionalDrifters/assets/66414555/54f5502b-9c4b-471f-b47c-be00577818ee)
+
 
 2D World: Transition to a two-dimensional plane, where you'll face new challenges and riddles that revolve around your new abillty to jump.
 
----GIF HERE---
+![Unity WebGL Player _ Dimensional Drifter and 8 more pages - Personal - Microsoft_ Edge 2023-09-12 02-44-55](https://github.com/Crashiff/DimensionalDrifters/assets/66414555/03dabb3c-809e-4c8e-9991-49aed5cfd015)
+
 
 2D-3D World: Using our uinque mechanisem explore the difference between the 2D and the 3D dimentions and work together to utilize them.
 
-
-
-https://github.com/Crashiff/DimensionalDrifters/assets/66414555/3854455d-8b09-4e08-aa42-ed4c435f81e5
-
+![Unity WebGL Player _ Dimensional Drifter and 11 more pages - Personal - Microsoft_ Edge 2023-09-12 02-56-38](https://github.com/Crashiff/DimensionalDrifters/assets/66414555/f74228d8-7206-4e22-a807-fb41750c66b5)
 
 
 3D World: Dive into the world of three dimensions, experiencing depth and complexity.
 
---GIF HERE--
+![Unity WebGL Player _ Dimensional Drifter and 8 more pages - Personal - Microsoft_ Edge 2023-09-12 02-45-58](https://github.com/Crashiff/DimensionalDrifters/assets/66414555/738cdc9a-fa92-4d39-ac77-bde060f8c21b)
+
+3D-4D World: Experience how 4D objects may pass through a 3D world like ours.
+
+![Unity WebGL Player _ Dimensional Drifter and 8 more pages - Personal - Microsoft_ Edge 2023-09-12 02-46-47](https://github.com/Crashiff/DimensionalDrifters/assets/66414555/76d43e4a-77ea-41b5-a1a4-aa7829ecc272)
 
 
 
