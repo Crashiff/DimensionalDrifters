@@ -11,7 +11,7 @@ public class Hypersphere : MonoBehaviour
     private GameObject HypersphereOuter;
 
     [SerializeField]
-    private float W_Axis = 1.0f;
+    public float W_Axis = 1.0f;
 
     private void Update()
     {
