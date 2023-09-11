@@ -7,6 +7,10 @@
 [![MIT License][license-shield]][license-url]
 [![HitCount][hit-shield]][hit-url]
 
+<p align="center">
+  <img src="https://github.com/Crashiff/DimensionalDrifters/assets/66414555/a0df7830-6778-433c-a383-e76033c14d0a" alt="Your Image Description">
+</p>
+
 
 <div align="center">
   <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Play the game!</a></h1>
@@ -46,7 +50,11 @@ Dimensional Drifters is a unique two-player game that takes you on a journey thr
 
 2D-3D World: Using our uinque mechanisem explore the difference between the 2D and the 3D dimentions and work together to utilize them.
 
----GIF HERE---
+
+
+https://github.com/Crashiff/DimensionalDrifters/assets/66414555/3854455d-8b09-4e08-aa42-ed4c435f81e5
+
+
 
 3D World: Dive into the world of three dimensions, experiencing depth and complexity.
 
