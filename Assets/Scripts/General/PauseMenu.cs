@@ -49,10 +49,23 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         IsPaused = false;
+        GameObject borderObject = transform.Find("Border").gameObject;
+
+        CheckForMultipleCameras(borderObject);
     }
 
     void Pause()
     {
+        GameObject borderObject = GameObject.Find("Border");
+
+        if (borderObject != null)
+        {
+            borderObject.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Only 1 camera in this level");
+        }
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         IsPaused = true;
