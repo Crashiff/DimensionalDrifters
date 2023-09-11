@@ -1425,7 +1425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7868163550162116300, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7868163550162116304, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
       propertyPath: m_RootOrder
@@ -1985,7 +1985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7868163550162116300, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7868163550162116304, guid: e59bf58292500644482e6b7315d5bfef, type: 3}
       propertyPath: m_RootOrder
@@ -2286,6 +2286,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2958616504796235558, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 1270
+      objectReference: {fileID: 0}
     - target: {fileID: 2958616504796235560, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.144
@@ -2293,6 +2297,10 @@ PrefabInstance:
     - target: {fileID: 2958616504796235560, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958616504796235561, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2958616505048934018, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
       propertyPath: jumpSpeed
@@ -2476,6 +2484,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5184506418778583299, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 8022
+      objectReference: {fileID: 0}
     - target: {fileID: 5184506419414971744, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: countDownText
       value: 
