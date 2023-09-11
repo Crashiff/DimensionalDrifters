@@ -13,10 +13,10 @@
 
 
 <div align="center">
-  <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Play the game!</a></h1>
+  <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Play the game  <br></b4>Click here!</a></h1>
 </div>
 <div align="center">
-  <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Click here!</a></h1>
+  
 </div>
 
 
