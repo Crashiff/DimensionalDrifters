@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/2D_And_3D/Level Y - Moving 2D 1.unity
     guid: 7ffa0085a20717248ae3e164e2682647
   - enabled: 1
-    path: Assets/Scenes/2D_And_3D/Level Z - Follow player.unity
+    path: Assets/Scenes/DemoTrying/Level Z - Follow player.unity
     guid: e46d25b196944c948936aee6554c4377
   - enabled: 1
     path: Assets/Scenes/3D/pre-maze.unity

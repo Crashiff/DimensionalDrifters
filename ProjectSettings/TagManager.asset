@@ -21,6 +21,7 @@ TagManager:
   - Player2Child
   - changeVolumeSlider
   - instruction
+  - Shape4D
   layers:
   - Default
   - TransparentFX
@@ -35,7 +36,7 @@ TagManager:
   - EndLevel
   - teleporter
   - splitScreen
-  - 
+  - 4DPlane
   - 
   - 
   - 
