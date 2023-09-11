@@ -169,6 +169,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &2705943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2705938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e34f3f13add65f44999008ed7fb8c22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mark: 4
+  gameOverImage: {fileID: 1457967879}
+  countDownText: {fileID: 1988863001}
 --- !u!1001 &129340490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1000,6 +1015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instructions3D2D
       objectReference: {fileID: 0}
+    - target: {fileID: 5912000559811524761, guid: 276eb80df717ad04d8ad1512d35dbcb7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 276eb80df717ad04d8ad1512d35dbcb7, type: 3}
 --- !u!1 &713251537 stripped
@@ -1484,7 +1503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: Level Z - Follow player
+  nextSceneName: Level falling objects
 --- !u!1001 &1637089131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2044,7 +2063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: Level Z - Follow player
+  nextSceneName: Level falling objects
 --- !u!21 &2086062269
 Material:
   serializedVersion: 8

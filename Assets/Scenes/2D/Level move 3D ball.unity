@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: Level X - Switch 2D
+  nextSceneName: Level 1 - Push box 1
 --- !u!1 &1608987459 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 166714347794140041, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
@@ -1645,7 +1645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
-  nextSceneName: Level X - Switch 2D
+  nextSceneName: Level 1 - Push box 1
 --- !u!1 &1911500507
 GameObject:
   m_ObjectHideFlags: 0
