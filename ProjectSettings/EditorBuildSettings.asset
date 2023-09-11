@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4D/PlayingWith4D.unity
     guid: 675f3cd023046384c9b2a2896a3b916d
+  - enabled: 1
+    path: Assets/Scenes/4D/Fractals.unity
+    guid: f38aa035748b3c4498c7a4a37f374c6a
   m_configObjects: {}
