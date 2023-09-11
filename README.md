@@ -15,6 +15,9 @@
 <div align="center">
   <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Play the game!</a></h1>
 </div>
+<div align="center">
+  <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Click here!</a></h1>
+</div>
 
 
 
@@ -91,7 +94,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 [![LinkedIn][linkedin-shield]][linkedin-url-tal]
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
