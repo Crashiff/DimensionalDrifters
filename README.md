@@ -1,4 +1,4 @@
-<h1 align="center" style="font-size: 50px;">Dimensional Drifter</h1>
+<h1 align="center" style="font-size: 50px;">Dimensional Drifters</h1>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -8,12 +8,12 @@
 [![HitCount][hit-shield]][hit-url]
 
 <p align="center">
-  <img src="https://github.com/Crashiff/DimensionalDrifters/assets/66414555/a0df7830-6778-433c-a383-e76033c14d0a" alt="Your Image Description">
+  <img src="https://github.com/Crashiff/DimensionalDrifters/assets/66414555/a0df7830-6778-433c-a383-e76033c14d0a" alt="Dimensional Drifters">
 </p>
 
 
 <div align="center">
-  <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Play the game  <br></b4>Click here!</a></h1>
+  <h1><a href="https://crashiff.github.io/DimensionalDrifters/Play/index.html" style="text-align: center; font-size: 24px;">Play the game  <br>Click here!</a></h1>
 </div>
 <div align="center">
   
@@ -30,14 +30,18 @@
   </p>
 </div>
 
-<!-- ABOUT THE PROJECT -->
+# How to play
+No download required, completely free to play. Just follow the link above.
+
+<!-- ABOUT THE PROJECT
 ## About The Project
 
 Game trailer:  
 [![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg)](https://www.youtube.com/embed/<VIDEO_ID>)
 
 [<img src="https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/<VIDEO_ID>)
+/>](https://www.youtube.com/embed/<VIDEO_ID>) -->
+
 
 # Game sammary
 Dimensional Drifters is a unique two-player game that takes you on a journey through different dimensions. Players control cubes and must solve riddles at each stage to progress to the next dimension, showcasing the fascinating differences between one-dimensional, two-dimensional, three-dimensional, and four-dimensional worlds.
