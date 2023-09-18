@@ -23,12 +23,24 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2429803494319476761, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2429803494723302394, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 2429803494723302395, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429803494723302395, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8780ca88be585b6448c5b4cf4f77dbf8, type: 2}
+    - target: {fileID: 2429803494723302395, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
+      propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 6eedb87f9c063fa49b180d0df63c08c5, type: 2}
     - target: {fileID: 2429803494723302398, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
@@ -93,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714863, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Name
-      value: Cube_2D_3D_Orange (1)
+      value: Cube_2D_3D_Orange (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5166954122652248120, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Mesh
