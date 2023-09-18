@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Q))
         {
             if (IsPaused) {
                 Resume();
@@ -49,10 +49,23 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         IsPaused = false;
+        GameObject borderObject = transform.Find("Border").gameObject;
+
+        CheckForMultipleCameras(borderObject);
     }
 
     void Pause()
     {
+        GameObject borderObject = GameObject.Find("Border");
+
+        if (borderObject != null)
+        {
+            borderObject.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Only 1 camera in this level");
+        }
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         IsPaused = true;
@@ -62,6 +75,12 @@ public class PauseMenu : MonoBehaviour
     {
         Resume();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OpenInstructions()
+    {
+        GameObject instructionScreen = GameObject.FindGameObjectWithTag("instruction");
+        instructionScreen.SetActive(true);
     }
 
     public void LoadMainMenu()
