@@ -100,7 +100,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <a><img title="ID" src="https://img.shields.io/badge/ID-302381389-black.svg?style=for-the-badge&logo=id" alt="ID: 302381389"></a>
 </p>
 <p>
-<a><img title="Phone number" src="https://img.shields.io/badge/Phone-052-225-9053-black.svg?style=for-the-badge&logo=id" alt="Phone Number: 052-225-9053"></a>
+<a><img title="Phone number" src="https://img.shields.io/badge/Phone-0522259053-black.svg?style=for-the-badge&logo=id" alt="Phone Number: 052-225-9053"></a>
 </p>
 
 [![LinkedIn][linkedin-shield]][linkedin-url-natanel]
@@ -114,7 +114,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <a><img title="ID" src="https://img.shields.io/badge/ID-209130707-black.svg?style=for-the-badge&logo=id" alt="ID: 209130707"></a>
 </p>
 <p>
-<a><img title="Phone number" src="https://img.shields.io/badge/Phone-054-479-8036-black.svg?style=for-the-badge&logo=id" alt="Phone Number: 054-479-8036"></a>
+<a><img title="Phone number" src="https://img.shields.io/badge/Phone-0544798036-black.svg?style=for-the-badge&logo=id" alt="Phone Number: 054-479-8036"></a>
 </p>
 
 [![LinkedIn][linkedin-shield]][linkedin-url-tal]
