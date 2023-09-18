@@ -96,25 +96,11 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <a href="https://github.com/Crashiff"><img title="Author" src="https://img.shields.io/badge/Author-Natanel Shiff-black.svg?style=for-the-badge&logo=github" alt=""></a>
 </p>
 
-<p>
-<a><img title="ID" src="https://img.shields.io/badge/ID-302381389-black.svg?style=for-the-badge&logo=id" alt="ID: 302381389"></a>
-</p>
-<p>
-<a><img title="Phone number" src="https://img.shields.io/badge/Phone-0522259053-black.svg?style=for-the-badge&logo=id" alt="Phone Number: 052-225-9053"></a>
-</p>
-
 [![LinkedIn][linkedin-shield]][linkedin-url-natanel]
 
 <br>
 <p>
 <a href="https://github.com/BzTal"><img title="Author" src="https://img.shields.io/badge/Author-Tal Ben Zvi-black.svg?style=for-the-badge&logo=github" alt=""></a>
-</p>
-
-<p>
-<a><img title="ID" src="https://img.shields.io/badge/ID-209130707-black.svg?style=for-the-badge&logo=id" alt="ID: 209130707"></a>
-</p>
-<p>
-<a><img title="Phone number" src="https://img.shields.io/badge/Phone-0544798036-black.svg?style=for-the-badge&logo=id" alt="Phone Number: 054-479-8036"></a>
 </p>
 
 [![LinkedIn][linkedin-shield]][linkedin-url-tal]
