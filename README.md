@@ -38,14 +38,9 @@ No download required, completely free to play. Just follow the link above.
 2. Download the files from this repository and choose a location and extract the main folder
 3. Open the folder from the Unity Hub, and that's it.
 
-<!-- ABOUT THE PROJECT
-## About The Project
+# Game trailer
 
-Game trailer:  
-[![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg)](https://www.youtube.com/embed/<VIDEO_ID>)
-
-[<img src="https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/<VIDEO_ID>) -->
+[![YouTube Video](https://img.youtube.com/vi/sLnbug3G3ac/0.jpg)](https://www.youtube.com/watch?v=sLnbug3G3ac)
 
 
 # Game sammary
