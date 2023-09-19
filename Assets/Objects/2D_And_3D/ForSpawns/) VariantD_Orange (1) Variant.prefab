@@ -105,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429803494929714863, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Name
-      value: Cube_2D_3D_Orange (1) Variant
+      value: ) VariantD_Orange (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5166954122652248120, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
       propertyPath: m_Mesh
@@ -212,21 +212,3 @@ MonoBehaviour:
   mark: 4
   gameOverImage: {fileID: 0}
   countDownText: {fileID: 0}
---- !u!1 &1986607664611984051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2429803494319476761, guid: 3c734d4d4e963fe498121e6cc4e710c2, type: 3}
-  m_PrefabInstance: {fileID: 4191087922946921130}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1700961200
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986607664611984051}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000002
-  m_Center: {x: 0, y: 0, z: 0}

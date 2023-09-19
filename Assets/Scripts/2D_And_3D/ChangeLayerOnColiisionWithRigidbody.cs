@@ -5,29 +5,25 @@ using UnityEngine;
 [ExecuteAlways]
 public class ChangeLayerOnColiisionWithRigidbody : MonoBehaviour
 {
-    private GameObject prepareChild;
     private GameObject colorChild;
 
     void Start()
     {
-        prepareChild = transform.Find("Prepare2D").gameObject;
         colorChild = transform.Find("Color2D").gameObject;
     }
 
     private void OnTriggerStay(Collider collision)
     {
-        if (collision.gameObject.name == "PlaneBuffer2D")
+        if (collision.gameObject.name == "PlaneBuffer2D" && colorChild != null)
         {
-            prepareChild.layer = LayerMask.NameToLayer("2DPlane");
             colorChild.layer = LayerMask.NameToLayer("2DPlane");
         }
     }
 
     private void OnTriggerExit(Collider collision)
     {
-        if (collision.gameObject.name == "PlaneBuffer2D")
+        if (collision.gameObject.name == "PlaneBuffer2D" && colorChild != null)
         {
-            prepareChild.layer = LayerMask.NameToLayer("Default");
             colorChild.layer = LayerMask.NameToLayer("Default");
         }
     }

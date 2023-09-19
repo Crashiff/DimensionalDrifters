@@ -6,13 +6,13 @@ public class CustomRenderingQueue : MonoBehaviour
 {
     public int customQueueOffsetMaterial1 = 0; // Custom rendering queue offset for Material 1
     public int customQueueOffsetMaterial2 = 0; // Custom rendering queue offset for Material 2
-    public Renderer renderer; // Reference to the Renderer component on the GameObject
+    public Renderer theRenderer; // Reference to the Renderer component on the GameObject
 
     void Start()
     {
-        if (renderer != null)
+        if (theRenderer != null)
         {
-            Material[] materials = renderer.sharedMaterials;
+            Material[] materials = theRenderer.sharedMaterials;
 
             if (materials.Length >= 2)
             {
@@ -25,7 +25,7 @@ public class CustomRenderingQueue : MonoBehaviour
                 materials[0] = newMaterial1;
                 materials[1] = newMaterial2;
 
-                renderer.sharedMaterials = materials;
+                theRenderer.sharedMaterials = materials;
             }
         }
     }

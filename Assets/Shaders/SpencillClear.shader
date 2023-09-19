@@ -1,10 +1,18 @@
 Shader "Custom/SpencillClear"
 {
+	Properties
+	{
+		_Color("Tint", Color) = (0, 0, 0, 1)
+		_MainTex("Texture", 2D) = "white" {}
+		_Smoothness("Smoothness", Range(0, 1)) = 0
+		_Metallic("Metalness", Range(0, 1)) = 0
+		[HDR]_Emission("Emission", color) = (0,0,0)
+
+		[HDR]_CutoffColor("Cutoff Color", Color) = (1,0,0,0)
+	}
 	SubShader
 	{
 		Tags { "RenderType" = "Opaque" "Queue" = "Geometry+1" "ForceNoShadowCasting" = "True"}
-		ColorMask 0
-		ZWrite off
 
 		CGINCLUDE
 		struct appdata
@@ -17,21 +25,13 @@ Shader "Custom/SpencillClear"
 			float4 pos : SV_POSITION;
 		};
 
-		v2f vert(appdata v)
-		{
-			v2f o;
-			o.pos = UnityObjectToClipPos(v.vertex);
-			return o;
-		}
-
-		half4 frag(v2f i) : SV_TARGET
-		{
-			return half4(1, 1, 0, 1);
-		}
-			ENDCG
+		ENDCG
 
 		Pass
 		{
+			ColorMask 0
+			ZWrite off
+
 			Stencil
 			{
 				Comp always
@@ -44,11 +44,28 @@ Shader "Custom/SpencillClear"
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
+
+			
+			v2f vert(appdata v)
+			{
+				v2f o;
+				o.pos = UnityObjectToClipPos(v.vertex);
+				return o;
+			}
+
+			half4 frag(v2f i) : SV_TARGET
+			{
+				return half4(1, 1, 0, 1);
+			}
+
 			ENDCG
 		}
 
 		Pass
 		{
+			ColorMask 0
+			ZWrite off
+
 			Stencil
 			{
 				Comp always
@@ -61,6 +78,19 @@ Shader "Custom/SpencillClear"
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
+
+			
+			v2f vert(appdata v)
+			{
+				v2f o;
+				o.pos = UnityObjectToClipPos(v.vertex);
+				return o;
+			}
+
+			half4 frag(v2f i) : SV_TARGET
+			{
+				return half4(1, 1, 0, 1);
+			}
 			ENDCG
 		}
 	}

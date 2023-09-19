@@ -1036,6 +1036,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 628106387803252750, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 628106388295988920, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2958616504796235558, guid: 2e87835592a78884eb953c1aadfe38be, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 1270
@@ -1242,6 +1250,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5184506418778583298, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5184506418778583299, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 8022
@@ -1270,6 +1282,10 @@ PrefabInstance:
       propertyPath: gameOverImage
       value: 
       objectReference: {fileID: 1457967879}
+    - target: {fileID: 7371113278681954522, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7528113249971394560, guid: 9e2a61b2831976841ad929796de331a9, type: 3}
       propertyPath: m_Materials.Array.size
       value: 0
