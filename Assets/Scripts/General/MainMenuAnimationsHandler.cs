@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainMenuAnimationsHandler : MonoBehaviour
 {
-public GameObject cubePrefab;
+    public GameObject cubePrefab;
     public float rotationDuration = 3f; // Duration for cube rotation
     private float rotationTimer;
 

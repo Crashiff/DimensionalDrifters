@@ -6,68 +6,21 @@
     <title>Unity WebGL Player | Dimensional Drifter</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <div id="InnerCanvasContainer">
-        <canvas id="unity-canvas" width=960 height=600></canvas>
-        <div id="unity-loading-bar">
-          <div id="unity-logo"></div>
-          <div id="unity-progress-bar-empty">
-            <div id="unity-progress-bar-full"></div>
-          </div>
-        </div>
-        <div id="unity-warning"> </div>
-        <div id="unity-footer">
-          <div id="unity-webgl-logo"></div>
-          <div id="unity-fullscreen-button"></div>
-          <div id="unity-build-title">Dimensional Drifter</div>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-
-      <!-- Controls overlay -->
-      <div id="controls-overlay">
-        <h2>Controls</h2>
-        <br><div id="blue-player-controls">
-          <h3>Blue player</h3>
-          <div class="control-group">
-            <div class="control-key">WASD</div>
-            <div class="control-description">Move</div>
-          </div>
-          <div class="control-group">
-            <div class="control-key">R</div>
-            <div class="control-description">Jump</div>
-          </div>
-          <div class="control-group">
-            <div class="control-key">E, Q</div>
-            <div class="control-description">Rotate 2D slice (relevant levels)</div>
-          </div>
-          <div class="control-group">
-            <div class="control-key">O</div>
-            <div class="control-description">Options and Pause Menu</div>
-          </div>
-        </div>
-        <div id="orange-player-controls">
-          <h3>Orange player</h3>
-          <div class="control-group">
-            <div class="control-key">Arrows</div>
-            <div class="control-description">Move</div>
-          </div>
-          <div class="control-group">
-            <div class="control-key">Space</div>
-            <div class="control-description">Jump</div>
-          </div>
-          <div class="control-group">
-            <div class="control-key">O</div>
-            <div class="control-description">Options and Pause Menu</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Open full screen! -->
-      <div id="experience-message">
-        <p><strong>For the best experience, open the game in Full-screen.</strong></p>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Dimensional Drifter</div>
       </div>
     </div>
     <script>
